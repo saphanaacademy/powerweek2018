@@ -27,7 +27,7 @@
 
   <meta name="viewport" content="width=device-width">
   
-  <title>S4HC_Leonardo_PW2018/19.png at master · techpmsap/S4HC_Leonardo_PW2018 · GitHub</title>
+  <title>S4HC_Leonardo_PW2018/19_02.png at master · techpmsap/S4HC_Leonardo_PW2018 · GitHub</title>
     <meta name="description" content="S/4 HANA Cloud Powerweek 2018 Exercises based on Business Application Programming Model - techpmsap/S4HC_Leonardo_PW2018">
     <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
   <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
@@ -40,7 +40,7 @@
   
   <meta name="pjax-timeout" content="1000">
   
-  <meta name="request-id" content="670B:7FF6:D01772:1A40400:5B92BC56" data-pjax-transient>
+  <meta name="request-id" content="670B:7FF6:D01D72:1A4079A:5B92BC5F" data-pjax-transient>
 
 
   
@@ -51,7 +51,7 @@
     <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
     <meta name="google-site-verification" content="GXs5KoUUkNCoaAZn7wPN-t01Pywp9M3sEjnt_3_ZWPc">
 
-  <meta name="octolytics-host" content="collector.githubapp.com" /><meta name="octolytics-app-id" content="github" /><meta name="octolytics-event-url" content="https://collector.githubapp.com/github-external/browser_event" /><meta name="octolytics-dimension-request_id" content="670B:7FF6:D01772:1A40400:5B92BC56" /><meta name="octolytics-dimension-region_edge" content="iad" /><meta name="octolytics-dimension-region_render" content="iad" />
+  <meta name="octolytics-host" content="collector.githubapp.com" /><meta name="octolytics-app-id" content="github" /><meta name="octolytics-event-url" content="https://collector.githubapp.com/github-external/browser_event" /><meta name="octolytics-dimension-request_id" content="670B:7FF6:D01D72:1A4079A:5B92BC5F" /><meta name="octolytics-dimension-region_edge" content="iad" /><meta name="octolytics-dimension-region_render" content="iad" />
 <meta name="analytics-location" content="/&lt;user-name&gt;/&lt;repo-name&gt;/blob/show" data-pjax-transient="true" />
 
 
@@ -69,7 +69,7 @@
     <meta name="user-login" content="">
 
       <meta name="expected-hostname" content="github.com">
-    <meta name="js-proxy-site-detection-payload" content="YWU0MzQ4YzliYTE5YzFhYzZlOWFmMTE2ZWM1M2YwMGNlMjY5OTUwMTg2Yzk5NWNmNTcxODkzYmI5Njc5YmZmZXx7InJlbW90ZV9hZGRyZXNzIjoiNTAuMjI1Ljc2LjEzMiIsInJlcXVlc3RfaWQiOiI2NzBCOjdGRjY6RDAxNzcyOjFBNDA0MDA6NUI5MkJDNTYiLCJ0aW1lc3RhbXAiOjE1MzYzNDMxMzUsImhvc3QiOiJnaXRodWIuY29tIn0=">
+    <meta name="js-proxy-site-detection-payload" content="NmIwMTk1NmFkNTM1ZTUyNmY5ZWZhMTJhZTc3NTk5N2EwOTdhZTBkYjkwNzY5ZmUwNTNmNmYxNDE1NDdkZDZkY3x7InJlbW90ZV9hZGRyZXNzIjoiNTAuMjI1Ljc2LjEzMiIsInJlcXVlc3RfaWQiOiI2NzBCOjdGRjY6RDAxRDcyOjFBNDA3OUE6NUI5MkJDNUYiLCJ0aW1lc3RhbXAiOjE1MzYzNDMxNjEsImhvc3QiOiJnaXRodWIuY29tIn0=">
 
     <meta name="enabled-features" content="DASHBOARD_V2_LAYOUT_OPT_IN,EXPLORE_DISCOVER_REPOSITORIES,UNIVERSE_BANNER,FREE_TRIALS,MARKETPLACE_INSIGHTS,MARKETPLACE_PLAN_RESTRICTION_EDITOR,MARKETPLACE_SEARCH,MARKETPLACE_INSIGHTS_CONVERSION_PERCENTAGES">
 
@@ -85,7 +85,7 @@
   <meta name="octolytics-dimension-user_id" content="35915609" /><meta name="octolytics-dimension-user_login" content="techpmsap" /><meta name="octolytics-dimension-repository_id" content="140559390" /><meta name="octolytics-dimension-repository_nwo" content="techpmsap/S4HC_Leonardo_PW2018" /><meta name="octolytics-dimension-repository_public" content="true" /><meta name="octolytics-dimension-repository_is_fork" content="false" /><meta name="octolytics-dimension-repository_network_root_id" content="140559390" /><meta name="octolytics-dimension-repository_network_root_nwo" content="techpmsap/S4HC_Leonardo_PW2018" /><meta name="octolytics-dimension-repository_explore_github_marketplace_ci_cta_shown" content="false" />
 
 
-    <link rel="canonical" href="https://github.com/techpmsap/S4HC_Leonardo_PW2018/blob/master/Prerequisites/images/19.png" data-pjax-transient>
+    <link rel="canonical" href="https://github.com/techpmsap/S4HC_Leonardo_PW2018/blob/master/Prerequisites/images/19_02.png" data-pjax-transient>
 
 
   <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
@@ -180,7 +180,7 @@
           autocapitalize="off"
           aria-autocomplete="list"
           aria-controls="jump-to-results"
-          data-jump-to-suggestions-path="/_graphql/GetSuggestedNavigationDestinations#csrf-token=C1CVtC3Ts9Rg6hMdF1YzulkbcuzIaS5Kn4aLhVnlXwFuCc3NINM7I3D3w9AqYQYm4LIj2Cgu2WbSg64CXCJq8Q=="
+          data-jump-to-suggestions-path="/_graphql/GetSuggestedNavigationDestinations#csrf-token=6BRX8UxDdHp0WzlVb/13h8lCqS27lra22CId1DJEQlONTQ+IQUP8jWRG6ZhSykIbcOv4GVvRQZqVJzhTN4N3ow=="
           spellcheck="false"
           autocomplete="off"
           >
@@ -239,7 +239,7 @@
 
           <span class="d-inline-block">
               <div class="HeaderNavlink px-0 py-2 m-0">
-                <a class="text-bold text-white no-underline" href="/login?return_to=%2Ftechpmsap%2FS4HC_Leonardo_PW2018%2Fblob%2Fmaster%2FPrerequisites%2Fimages%2F19.png" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in; experiment:site_header_dropdowns; group:control">Sign in</a>
+                <a class="text-bold text-white no-underline" href="/login?return_to=%2Ftechpmsap%2FS4HC_Leonardo_PW2018%2Fblob%2Fmaster%2FPrerequisites%2Fimages%2F19_02.png" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in; experiment:site_header_dropdowns; group:control">Sign in</a>
                   <span class="text-gray">or</span>
                   <a class="text-bold text-white no-underline" href="/join?source=header-repo" data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up; experiment:site_header_dropdowns; group:control">Sign up</a>
               </div>
@@ -380,9 +380,9 @@
   <div class="repository-content ">
 
     
-  <a class="d-none js-permalink-shortcut" data-hotkey="y" href="/techpmsap/S4HC_Leonardo_PW2018/blob/5e54f40a526b94b21e113a51455fb727687e14e5/Prerequisites/images/19.png">Permalink</a>
+  <a class="d-none js-permalink-shortcut" data-hotkey="y" href="/techpmsap/S4HC_Leonardo_PW2018/blob/5e54f40a526b94b21e113a51455fb727687e14e5/Prerequisites/images/19_02.png">Permalink</a>
 
-  <!-- blob contrib key: blob_contributors:v21:33a568d3d3a780096a854d0ff7f045f1 -->
+  <!-- blob contrib key: blob_contributors:v21:9b226dc2215373d4e99bf69fbecd1749 -->
 
   
 
@@ -426,7 +426,7 @@
 
 
             <a class="select-menu-item js-navigation-item js-navigation-open selected"
-               href="/techpmsap/S4HC_Leonardo_PW2018/blob/master/Prerequisites/images/19.png"
+               href="/techpmsap/S4HC_Leonardo_PW2018/blob/master/Prerequisites/images/19_02.png"
                data-name="master"
                data-skip-pjax="true"
                rel="nofollow">
@@ -465,12 +465,12 @@
       </clipboard-copy>
     </div>
     <div id="blob-path" class="breadcrumb">
-      <span class="repo-root js-repo-root"><span class="js-path-segment"><a data-pjax="true" href="/techpmsap/S4HC_Leonardo_PW2018"><span>S4HC_Leonardo_PW2018</span></a></span></span><span class="separator">/</span><span class="js-path-segment"><a data-pjax="true" href="/techpmsap/S4HC_Leonardo_PW2018/tree/master/Prerequisites"><span>Prerequisites</span></a></span><span class="separator">/</span><span class="js-path-segment"><a data-pjax="true" href="/techpmsap/S4HC_Leonardo_PW2018/tree/master/Prerequisites/images"><span>images</span></a></span><span class="separator">/</span><strong class="final-path">19.png</strong>
+      <span class="repo-root js-repo-root"><span class="js-path-segment"><a data-pjax="true" href="/techpmsap/S4HC_Leonardo_PW2018"><span>S4HC_Leonardo_PW2018</span></a></span></span><span class="separator">/</span><span class="js-path-segment"><a data-pjax="true" href="/techpmsap/S4HC_Leonardo_PW2018/tree/master/Prerequisites"><span>Prerequisites</span></a></span><span class="separator">/</span><span class="js-path-segment"><a data-pjax="true" href="/techpmsap/S4HC_Leonardo_PW2018/tree/master/Prerequisites/images"><span>images</span></a></span><span class="separator">/</span><strong class="final-path">19_02.png</strong>
     </div>
   </div>
 
 
-  <include-fragment src="/techpmsap/S4HC_Leonardo_PW2018/contributors/master/Prerequisites/images/19.png" class="commit-tease commit-loader">
+  <include-fragment src="/techpmsap/S4HC_Leonardo_PW2018/contributors/master/Prerequisites/images/19_02.png" class="commit-tease commit-loader">
     <div>
       Fetching contributors&hellip;
     </div>
@@ -487,8 +487,8 @@
   <div class="file-actions">
 
     <div class="BtnGroup">
-      <a id="raw-url" class="btn btn-sm BtnGroup-item" href="/techpmsap/S4HC_Leonardo_PW2018/raw/master/Prerequisites/images/19.png">Download</a>
-      <a rel="nofollow" class="btn btn-sm BtnGroup-item" href="/techpmsap/S4HC_Leonardo_PW2018/commits/master/Prerequisites/images/19.png">History</a>
+      <a id="raw-url" class="btn btn-sm BtnGroup-item" href="/techpmsap/S4HC_Leonardo_PW2018/raw/master/Prerequisites/images/19_02.png">Download</a>
+      <a rel="nofollow" class="btn btn-sm BtnGroup-item" href="/techpmsap/S4HC_Leonardo_PW2018/commits/master/Prerequisites/images/19_02.png">History</a>
     </div>
 
         <a class="btn-octicon tooltipped tooltipped-nw"
@@ -498,7 +498,7 @@
             <svg class="octicon octicon-device-desktop" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M15 2H1c-.55 0-1 .45-1 1v9c0 .55.45 1 1 1h5.34c-.25.61-.86 1.39-2.34 2h8c-1.48-.61-2.09-1.39-2.34-2H15c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm0 9H1V3h14v8z"/></svg>
         </a>
 
-        <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form" action="/techpmsap/S4HC_Leonardo_PW2018/delete/master/Prerequisites/images/19.png" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="CLY1lkmMbkjBXepbA5JhQ6CwAZhpSe0SaCIVeY8M4L0xNsoupoLmLvDKdlgM0AkHP1LWga+rs3WNEjvYQuLkdQ==" />
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form" action="/techpmsap/S4HC_Leonardo_PW2018/delete/master/Prerequisites/images/19_02.png" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="j/UD029qJmGedqlqW49e2tdTnOjN3mmylv84no6ftoqn9BgV+jGs/JfB7PedSAVeO/THAP4BeCxUrxBHMDk70A==" />
           <button class="btn-octicon btn-octicon-danger tooltipped tooltipped-nw" type="submit"
             aria-label="You must be signed in to make or propose changes" data-disable-with>
             <svg class="octicon octicon-trashcan" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z"/></svg>
@@ -506,7 +506,7 @@
 </form>  </div>
 
   <div class="file-info">
-    44.2 KB
+    188 KB
   </div>
 </div>
 
@@ -514,7 +514,7 @@
 
   <div itemprop="text" class="blob-wrapper data type-text">
       <div class="image">
-          <span class="border-wrap"><img src="/techpmsap/S4HC_Leonardo_PW2018/blob/master/Prerequisites/images/19.png?raw=true" alt="19.png"></span>
+          <span class="border-wrap"><img src="/techpmsap/S4HC_Leonardo_PW2018/blob/master/Prerequisites/images/19_02.png?raw=true" alt="19_02.png"></span>
       </div>
   </div>
 
@@ -543,7 +543,7 @@
 <div class="footer container-lg px-3" role="contentinfo">
   <div class="position-relative d-flex flex-justify-between pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
     <ul class="list-style-none d-flex flex-wrap ">
-      <li class="mr-3">&copy; 2018 <span title="0.13526s from unicorn-5b454f558d-z76tb">GitHub</span>, Inc.</li>
+      <li class="mr-3">&copy; 2018 <span title="0.17816s from unicorn-2160118325-4f4qv">GitHub</span>, Inc.</li>
         <li class="mr-3"><a data-ga-click="Footer, go to terms, text:terms" href="https://github.com/site/terms">Terms</a></li>
         <li class="mr-3"><a data-ga-click="Footer, go to privacy, text:privacy" href="https://github.com/site/privacy">Privacy</a></li>
         <li class="mr-3"><a href="https://help.github.com/articles/github-security/" data-ga-click="Footer, go to security, text:security">Security</a></li>

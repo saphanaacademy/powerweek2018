@@ -31,6 +31,7 @@ Below are prerequisites required for the exercises in this workshop.
 1. [Sign up for SAP Cloud Platform Neo trial account](#sign-up-neo)
 1. [Sign up for SAP Cloud Platform Cloud Foundry trial account](#sign-up-cf)
 1. [Install Cloud Foundry CLI](#install-cf-cli)
+1. [Install ML Foundation CLI](#install-ml-cli)
 1. [Install Chrome Postman application](#postman)
 1. [Install Chrome Postman Interceptor application](#postman-interceptor)  
   
@@ -85,13 +86,22 @@ Sign up also for SAP Cloud Platform Cloud Foundry trial account.
 	![](images/17.png)
 
 
-## <a name="install-cf-cli"></a> Install Cloud Foundry CLI
-To install Cloud Foundry Command Line Interface (CLI)  
+## <a name="install-cf-cli"></a>Install Cloud Foundry CLI
+Cloud Foundry CLI is the official command line client for Cloud Foundry. It provides a set of commands for managing your apps.  
 
-1.	Go to Cloud Foundry CLI download page <https://github.com/cloudfoundry/cli#downloads>  
-
-1. Download and run the installer specific for your platform.  
+1.	Cloud Foundry CLI can be downloaded here <https://github.com/cloudfoundry/cli#downloads>. Just select the installer which matches your Workstation's Operating System
 	![](images/19.png)
+
+1. Once downloaded the file, please install it by double clicking on the downloaded file.
+
+
+## <a name="install-ml-cli"></a>Install Machine Learning Foundation CLI
+SAP Leonardo Machine Learning foundation Command Line Interface (CLI) is a way of interacting with the foundation and using its services, e.g. to simplify data upload for Retraining and Bring your Own Model scenarios as described in the official documentation.
+
+1.	Machine Learning Foundation CLI can be downloaded here <https://tools.hana.ondemand.com/#mlfoundation>. Just select the installer which matches your Workstation's Operating System
+	![](images/19_02.png)
+
+1. Once downloaded the file, please install it following the instruction contained in the same page
 
 
 ## <a name="postman"></a> Install Chrome Postman application
