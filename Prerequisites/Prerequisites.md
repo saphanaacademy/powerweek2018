@@ -26,8 +26,9 @@ Below are prerequisites required for the exercises in this workshop.
 
 
 1. [Bring Your Own Laptop with Admin Access](#laptop)
-2. [Remote Desktop Connection](#rdc)
+1. [Remote Desktop Connection](#rdc)
 1. [Install Java JRE](#install-java-jre)
+1. [Install Paho Client](#install-paho-client)
 1. [Sign up for SAP Cloud Platform Neo trial account](#sign-up-neo)
 1. [Sign up for SAP Cloud Platform Cloud Foundry trial account](#sign-up-cf)
 1. [Install Cloud Foundry CLI](#install-cf-cli)
@@ -47,13 +48,21 @@ In order to connect with the Virtual Machines we have prepared for you, you need
 	![](images/01.png)
 
 
-## <a name="install-java-jdk"></a>Install Java JRE
+## <a name="install-java-jre"></a>Install Java JRE
 
 1.	Download and install Java JRE from this link <https://www.java.com/en/>  
 	![](images/05.png)
 
+	
+### <a name="install-paho-client"></a>Install Paho Client
 
-## <a name="sign-up-neo"></a>Sign up for SAP Cloud Platform Neo trial account
+1.	Download and install Paho Client from this link <https://help.sap.com/viewer/e9e5e6a2fa144c31b5b5d5c144047dec/Cloud/en-US>  
+	*Note: Paho Client will not work on Mac environment.*
+	
+	![](images/01b.png)
+
+	
+### <a name="sign-up-neo"></a>Sign up for SAP Cloud Platform Neo trial account
 You need Neo trial SAP Cloud Platform to complete some of the hands-on exercises.
 
 1.	Sign up for SAP Cloud Platform trial account from <https://account.hanatrial.ondemand.com/>  

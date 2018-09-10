@@ -32,38 +32,19 @@ The goal of this exercise is to create a new device data model in the IoT Servic
 Below are some of the prerequisites for this exercise.
 
 * An SAP IoT Service cockpit system with user credentials which will be provided by your instructor
-* Install Java JRE
-* Install Paho Client
 
 
 ## Steps
 
-1. [Install Java JRE](#install-java-jre)
-1. [Install Paho Client](#install-paho-client)
 1. [Introduction](#introduction)
 1. [Creating device data model](#creating-device-data-model)
 1. [Device and sensor onboarding](#device-and-sensor-onboarding)
 1. [Sending messages via MQTT using Paho client](#mqtt-Paho)
 1. [Consuming and viewing sensor data](#consuming-sensor-data)
 
-## Prerequisites Installation
-### <a name="install-java-jdk"></a>Install Java JRE
-
-1.	Download and install Java JRE from this link <https://www.java.com/en/>  
-	![](images/01a.png) 
-	
-### <a name="install-paho-client"></a>Install Paho Client
-
-1.	Download and install Palo Client from this link <https://help.sap.com/viewer/e9e5e6a2fa144c31b5b5d5c144047dec/Cloud/en-US>  
-	*Note: Paho Client will not work on Mac environment.*
-	
-	![](images/01b.png)
-
 ### <a name="introduction"></a> Introduction
 The SAP Cloud Platform Internet of Things Service enables customers and partners to develop, customize, and operate IoT business applications in the cloud. SAP CP IoT Service provides Lifecycle management at scale for IoT devices from onboarding to decommissioning. It also provides a way to securely connect to remote devices over a broad variety of IoT protocols. It provides gateway Edge which provides on-premise IoT edge processing and also gateway cloud which does centralized cloud based processing. The **IoT cockpit** is the user interface of the solution and provides access to various functions. It is the main user interface for users to interact with the Internet of Things core service. It can be used for creating users and tenants, for creating device data models, for device onboarding and decomissioning, for adding new networks and to visualize the data which are being ingested via IoT devices/sensors.  
-	![](images/01.png)
-
-
+	![](images/01.png)	
 
 ### <a name="creating-device-data-model"></a> Creating device data model
 Centralized Device data model provides the schema of device related configurations including the data fields that will be exchanged. In order to send data to the IoT service a device data model is required. The device entity must have at least one sensor assigned to it. In case, no sensor is created beforehand a Sensor will be automatically created during data ingestion (default behavior). A new sensor type can be added with capabilities(measures/commands). A capability can be reused since it can be assigned to multiple sensor types and each capability can have one or many properties. 
