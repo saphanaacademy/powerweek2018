@@ -105,7 +105,7 @@ The Internet of Things service cockpit is the user interface of the Internet of 
 1.	Right click on the *config\_gateway\_mqtt.xml* file in the *config* folder of your Gateway Edge installation and choose **Edit with Notepad++**  
 	![](images/16.png)
 
-1.	Just for the two tags **amq** and **coreBundles** replace all the occurrences of the IP string **127.0.0.1** with the **\<HOST\_NAME\>** of your IoT Service (you should have just 3 occurrences)  
+1.	Just for the two tags **<cnf:connectionString>** and **<cnf:address>** replace the IP string **127.0.0.1** with the **\<HOST\_NAME\>** of your IoT Service (you should have just 2 occurrences)  
 	![](images/17.png)
 
 1.	You should get something like this. Remember to **save** the file  
@@ -117,8 +117,8 @@ The Internet of Things service cockpit is the user interface of the Internet of 
 1. Copy the generated code in the clipboard  
 	![](images/20.png)
 
-1. Search for the tag `<cnf:gateway>` in the *config\_gateway\_mqtt.xml* file and change it to
-`<cnf:gateway gatewayAlternateId="<<< generated code>>> ">` where **<<< generated code >>>** must be replaced with the code you copied in the clipboard removing all the included space characters: you need to keep just the letters and numbers. Then **save** the file  
+1. Search for the tag **<cnf:gateway>** in the *config\_gateway\_mqtt.xml* file and change it to
+`<cnf:gateway gatewayAlternateId="<<< generated code>>>">` where **<<< generated code >>>** must be replaced with the code you copied in the clipboard removing all the included space characters: you need to keep just the letters and numbers. Then **save** the file  
 	![](images/21.png)
 
 1.	Go back to the terminal window and execute the command `gateway.bat` to start the Gateway Edge onboarding process  
