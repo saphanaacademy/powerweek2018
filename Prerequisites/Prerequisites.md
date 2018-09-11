@@ -164,7 +164,7 @@ Another required tool is the Postman Interceptor app for Chrome. This can be fou
 1.	Edit **PATH** in the System Variables area.
 	![](images/38.png)
 
-1.	Add a new value that corresponds to where OpenSSL has been installed (be sure to include /bin at the end).
+1.	Add a new value that corresponds to where OpenSSL has been installed (be sure to include \bin at the end).
 	![](images/39.png)
 
 1.  Save all changes.
