@@ -338,9 +338,9 @@ This section explains various ways we can consume and visualize the measurements
 
 1. Congratulations! You have successfully consumed and analyzed sensor data.
 
-### <a name="Bogota"></a> ##############################################################################
+### <a name="Bogota_s"></a> ##############################################################################
 ### <a name="Bogota"></a> # PowerWeek Bogota Students : Stop here as rest of exercise will be demo'ed. #
-### <a name="Bogota"></a> ##############################################################################
+### <a name="Bogota_e"></a> ##############################################################################
 
 
 ### <a name="workflow"></a> SAP Cloud Platform Workflow
