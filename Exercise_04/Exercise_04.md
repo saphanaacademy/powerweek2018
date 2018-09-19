@@ -34,7 +34,7 @@ Here below are prerequisites for this exercise.
 * SAP IoT Service system (provided by your instructor)
 * SAP Web IDE system (provided by your instructor)
 * a REST client like Postman plugin for Chrome browser
-* A remote desktop connection app to access the remote system
+* OPTIONAL - Python and openSSL
 
 
 ## Steps
@@ -308,7 +308,7 @@ In this section you are going to learn how to create a Thing using the SAP IoT A
 	| --------- | ----- |
 	| Name | greenhouse\_xx |
 	| Description | Greenhouse xx |
-	| Authorization Group | the one starting with "6b569" |
+	| Authorization Group | greenhouse\_iot\_auth\_group |
 	| Provider | None |
 	
 	then click on **Save**
@@ -864,6 +864,7 @@ This is an OPTIONAL part of the exercise. In case for example you want to send d
 	        
 	    except IOError:
 	        print ("Error")
+	
 	```
 	![](images/175.png)
 
@@ -876,7 +877,7 @@ This is an OPTIONAL part of the exercise. In case for example you want to send d
 
 1. If you want you can also adjust two other parameters like the **timeInterval** which is set to 5 seconds and the numeber of **iterations** which is set to 20. The first one is the interval between each send command and the second is how many send commands you want to issue  
 
-1. From the Terminal window, run the command `python send_data.py`. For each iteration you should receive a **HTTP Response** code of **200**  
+1. From the Terminal window, run the command `python send_data.py`. You may need to install the requests package first (`easy_install requests` or `pip install requests`). For each iteration you should receive a **HTTP Response** code of **200**  
 	![](images/177.png)
 
 1. If you look now at the analysis page of your application you should see the values you just sent.  
