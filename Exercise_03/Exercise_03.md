@@ -61,41 +61,7 @@ Here below are prerequisites for this exercise.
 The SAP Cloud Platform Internet of Things Service enables customers and partners to develop, customize, and operate IoT business applications in the cloud. IoT Services provides Lifecycle management at scale for IoT devices from onboarding to decommissioning. It also provides a way to securely connect to remote devices over a broad variety of IoT protocols. It provides gateway Edge which provides one-premise IoT edge processing and also gateway cloud which does centralized cloud based processing.
 
 The IoT cockpit is the user interface of the solution and provides access to various functions. It is the main interface for users to interact with the Internet of Things core service. It can be used creating user & tenants. Creating device data model, Device Onboarding and adding new networks etc. it can also be used to deploy interceptors, retrieve network logs, visualize the data which is being ingested via IoT devices/sensors.  
-	![](images/000.png)
-
-Before moving forward let's check up if all the prerequisites are in place for the completion of the entire exercise.
-
-1. Download the [Exercise\_03\_Support\_Files.zip](files/Exercise_03_Support_Files.zip?raw=true) file
-
-1. Extract the content of this file in a proper location on your machine using the password provided by your instructor
-
-1. You will find a file named *Iflowgenerator.zip*: extract it as well in a proper directory and open this folder
-	![](images/001.png)
-
-1. Open the *config.properties* file with your favourite text editor, change the XX value to your workstation ID and save the file  
-	![](images/002.png)
-
-1. Open a terminal/command window and navigate to the folder where you have extracted the *Iflowgenerator*
-
-1. Run the command
-
-	```sh
-	java -jar CPIPkgClient-1.0.0-shaded.jar "CPL265-Maintenance Scenario with SAP Cloud Platform Integration.zip"
-	```
-	The command is executed and it generates a file named *CPL265-IntegrationFlowXX.zip* where **XX** is you workstation ID
-	>NOTE: don't care about the "error in opening zip file"  
-
-	![](images/003.png)
-	![](images/004.png)
-
-1.	Open the configuration URL document, which you will need to complete the exercise. Documents are available inside **Iflowgenerator** folder. Please use the file (*URLS\_rktw002.TXT* or *URLS\_rktw003.TXT*) assignment to you by the instructor.
-
-1.	Take the **IoT Service Cockpit URL** and paste it in a new browser window  
-	![](images/005.png)
-	![](images/005a.png)
-
-1. Congratulations! Prerequisites for the exercise have been verified.  	
-
+	![](images/000.png)	
 
 ### <a name="device-onboarding"></a> Device onboarding
 Each device exchanges data with a specific protocol (for example: REST in this exercise).  Each device corresponds to 1 unique physical node. We need to create physical node that corresponds to a physical device. In the following section, it is described how to create a Device for the REST network.
