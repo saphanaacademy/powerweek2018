@@ -175,10 +175,7 @@ Each device exchanges data with a specific protocol (for example: REST in this e
 1. As a side note, if you need to know where you downloaded the certificate, you can click on the small down arrow on the Chrome status bar and click on **Show in Finder** for MAC users or **Show in Explorer** for Windows users  
 	![](images/025.png)
 
-	![](images/026.png)
-
 1. Congratulations! You have successfully on-boarded a new device and a new sensor.
-
 
 
 ### <a name="install-certificate"></a> Install the certificate
