@@ -340,7 +340,7 @@ This section explains various ways we can consume and visualize the measurements
 
 ### <a name="Bogota_s"></a> -------------------------------------------------------------------------------
 ### <a name="Bogota_s"></a> -------------------------------------------------------------------------------
-### <a name="Bogota"></a> --- PowerWeek Bogota Students : Stop here as rest of exercise will be demo'ed. ---
+### <a name="Bogota"></a> - PowerWeek Bogota Students : Stop here as rest of exercise will be demo'ed. -
 ### <a name="Bogota_s"></a> -------------------------------------------------------------------------------
 ### <a name="Bogota_s"></a> -------------------------------------------------------------------------------
 
