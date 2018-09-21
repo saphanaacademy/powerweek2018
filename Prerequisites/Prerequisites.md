@@ -27,12 +27,14 @@ Below are prerequisites required for the exercises in this workshop.
 
 1. [Bring Your Own Laptop with Admin Access](#laptop)
 1. [Remote Desktop Connection](#rdc)
-1. [Install Java JRE](#install-java-jre)
-1. [Install Paho Client](#install-paho-client)
 1. [Sign up for SAP Cloud Platform Neo trial account](#sign-up-neo)
 1. [Sign up for SAP Cloud Platform Cloud Foundry trial account](#sign-up-cf)
 1. [Install Cloud Foundry CLI](#install-cf-cli)
+1. [Install MTA Plugin](#install-mta-cli)
 1. [Install ML Foundation CLI](#install-ml-cli)
+1. [Install Minio Client](#install-minio-client)
+1. [Install Java JRE](#install-java-jre)
+1. [Install Paho Client](#install-paho-client)
 1. [Install Chrome Postman application](#postman)
 1. [Install Chrome Postman Interceptor application](#postman-interceptor)  
 1. [Install Python](#install-python)
@@ -48,20 +50,6 @@ Please bring the laptop that you have admin access for hands-on exercises.
 
 In order to connect with the Virtual Machines we have prepared for you, you need to have the Remote Desktop Connection (RDC) tool installed on your machine. For Windows users, RDC comes already installed, so if you have Windows you don't have to worry about it. If you are MAC user, instead, you can download it for free from the Mac App Store.  
 	![](images/01.png)
-
-
-## <a name="install-java-jre"></a>Install Java JRE
-
-1.	Download and install Java JRE from this link <https://www.java.com/en/>  
-	![](images/05.png)
-
-
-## <a name="install-paho-client"></a>Install Paho Client
-
-1.	Download and install Paho Client from this link <https://help.sap.com/viewer/e9e5e6a2fa144c31b5b5d5c144047dec/Cloud/en-US>  
-	*Note: Paho Client will not work on Mac environment.*
-
-	![](images/01b.png)
 
 
 ## <a name="sign-up-neo"></a>Sign up for SAP Cloud Platform Neo trial account
@@ -103,7 +91,15 @@ Cloud Foundry CLI is the official command line client for Cloud Foundry. It prov
 1.	Cloud Foundry CLI can be downloaded here <https://github.com/cloudfoundry/cli#downloads>. Just select the installer which matches your Workstation's Operating System
 	![](images/19.png)
 
-1. Once downloaded the file, please install it by double clicking on the downloaded file.
+1. Once the file has been downloaded, please install it by double clicking on the downloaded file.
+
+
+## <a name="install-mta-cli"></a>Install MTA Plugin
+The SAP Cloud Platform Cloud Foundry Plugins are used to extend the Cloud Foundry CLI with additional commands. The MTA Plugin performs operations on multi-target applications (MTAs) such as deploying, removing, viewing, etc.  
+
+1.	The MTA Plugin can be downloaded here <https://tools.hana.ondemand.com/#cloud>. Scroll down to the **Plugins** section and download MTA plugin which matches your Workstation's Operating System
+
+1. Once the file has been downloaded, please install by issuing the following command from a command prompt in the folder where you downloaded the file: **cf install-plugin \<downloaded-filename\>** where the name of the downloaded file replaces **\<downloaded-filename\>**.
 
 
 ## <a name="install-ml-cli"></a>Install Machine Learning Foundation CLI
@@ -112,7 +108,27 @@ SAP Leonardo Machine Learning foundation Command Line Interface (CLI) is a way o
 1.	Machine Learning Foundation CLI can be downloaded here <https://tools.hana.ondemand.com/#mlfoundation>. Just select the installer which matches your Workstation's Operating System
 	![](images/19_02.png)
 
-1. Once downloaded the file, please install it following the instruction contained in the same page
+1. Once you have downloaded the file, please install it following the instructions contained in the same page
+
+
+## <a name="install-minio-client"></a>Install Minio Client
+
+1. Follow instructions on <https://docs.minio.io/docs/minio-client-quickstart-guide.html> to install the client for your operating system.
+
+
+## <a name="install-java-jre"></a>Install Java JRE
+
+1.	Download and install Java JRE from this link <https://www.java.com/en/>  
+	![](images/05.png)
+
+
+## <a name="install-paho-client"></a>Install Paho Client
+
+1.	Download and install Paho Client from this link <https://help.sap.com/viewer/e9e5e6a2fa144c31b5b5d5c144047dec/Cloud/en-US>  
+	*Note: Paho Client will not work on Mac environment.*
+
+	![](images/01b.png)
+
 
 
 ## <a name="postman"></a> Install Chrome Postman application
