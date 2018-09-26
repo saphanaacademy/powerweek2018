@@ -6,16 +6,17 @@
 
 
 ## Description
-In this exercise, you’ll learn how 
+In this exercise, you’ll learn how to
 
 * access SAP Cloud Foundry Org and Space via SAP CP Cockpit
 * create Service Instance and Service Key for ML Foundation
 * generate an access token with the Generate Token tool
+* generate an access token with Postman
 
 ## Target group
 
 * Developers
-* People interested in SAP Leonardo and Machine Learning 
+* People interested in SAP Leonardo and Machine Learning
 
 
 ## Goal
@@ -33,21 +34,18 @@ The goal of this exercise is to understand how to access SAP Cloud Foundry cockp
 
 
 ### <a name="cf-org-space"></a> SAP Cloud Foundry Org and Space via SAP CP Cockpit
-You used the Cloud Foundry user to access the SAP API Business Hub and the SAP Cloud Platform - Neo environment. Now you will learn how to work with ML Foundation Services that are available within your SAP Cloud Platform Global Account. Please, make sure that you work with the correct username to avoid conflicts with other participants. Take note of the following Cloud foundry credential, you will be using it in the following steps.
-Organization and space will be automatically configured and made available during the login process as there is just one space and org for each user.
+You used your SAP Cloud Platform trial account to access the SAP API Business Hub and the SAP Cloud Platform - Neo environment. Now you will learn how to work with ML Foundation Services that are available within your SAP Cloud Platform Global Account.
 
-
-1. Open Firefox as Chrome will use SSO for SAP Employees. Login to SAP Cloud Platform Cockpit via <https://account.hana.ondemand.com/cockpit>. Login with the credentials provided by your instructor. The user name will be in the form of an email as **ml-train+XX@sap.com**, where **XX** must be replaced by your workstation ID  
+1. Using Chrome login to the SAP Cloud Platform trial <https://account.hanatrial.ondemand.com/cockpit#/home/trialhome>  
 	![](images/01.png)
 
-1.	Click on your global account **SAP\_ML\_Demo**  	![](images/03.png)
-
-1.	Click on the Subaccount/Organisation **ml-trainxx** where XX is your workstation ID  
+1. Click on **Cloud Foundry Trial** then the **Trial** subaccount  
 	![](images/04.png)
 
-1.	Here you can see some your Cloud Foundry details like the name of your Organization, the number of Spaces and the API endpoint. Click on the **number of Spaces**  	![](images/05.png)
+1.	Here you can see some your Cloud Foundry details like the name of your Organization, the number of Spaces and the API endpoint. Click  **Spaces** in the left menu
+ 	![](images/05.png)
 
-1. Click on the tile named "training" which is the one related to your space  
+1. Click on the tile named "dev" which is the one related to your space  
 	![](images/06.png)
 
 1. You have reached your Cloud Foundry cockpit. At moment there should be no applications available  
@@ -56,11 +54,10 @@ Organization and space will be automatically configured and made available durin
 1. You have finished with the preparation of your Cloud Foundry environment.
 
 
-
 ### <a name="service-instance-key"></a> Create Service Instance and Service Key for ML Foundation
-Before we continue we need to get a service key from the ML Foundation service. A service key enables the ML Foundation Service to be used outside the CF environment. In this exercise, you need to create such a key to be used by an external application like Swagger UI or Postman. The service key contains all the URLs and credentials (clientid and clientsecret) required for you to access the ML Foundation service running for your productive account. Please keep this browser window open, since you will need it in the next section.
+Before we continue we need to create a service instance and get a service key from the ML Foundation service. A service key enables the ML Foundation Service to be used outside the CF environment. In this exercise, you need to create such a key to be used by an external application like Swagger UI or Postman. The service key contains all the URLs and credentials (clientid and clientsecret) required for you to access the ML Foundation service running for your trial account. Please keep this browser window open, since you will need it in the next section.
 
-1.	Within your space navigate to **Services -> Service Marketplace**, then click on the **ml-foundation** tile  
+1.	Within your space navigate to **Services -> Service Marketplace**, then click on the **ml-foundation-trial-beta** tile  
 	![](images/08.png)
 
 1.	Select Instances on the left menu bar and click on **New Instance**  
@@ -75,7 +72,7 @@ Before we continue we need to get a service key from the ML Foundation service. 
 1.	Click **Next**  
 	![](images/12.png)
 
-1.	Enter a name for the new instance, like **ml\_instance\_XX** where XX is your workstation ID and click **Finish**  
+1.	Enter a name for the new instance, like **ml** and click **Finish**  
 	![](images/13.png)
 
 1.	Click on the newly created instance  
@@ -84,25 +81,23 @@ Before we continue we need to get a service key from the ML Foundation service. 
 1.	Select **Service Keys** in the left menu bar and click the **Create Service Key** button to create a new service key for your instance  
 	![](images/15.png)
 
-1.	 Enter a name for this service key like **ml\_servicekey\_XX** where XX is your workstation ID; then click **Save** to save the service key  
+1.	 Enter a name for this service key like **ml-sk** then click **Save** to save the service key  
 	![](images/16.png)
 
-1.	You get a screen like this. Please keep this page open or copy the service key somewhere because you'll need it in the next exercises  
+1.	You get a screen like this. Please keep this page open or copy the service key somewhere because you'll need it in the upcoming exercises  
 	![](images/17.png)
 
 1. You have successfully generated a service key for the ML Foundation service.
 
 
-
-
 ### <a name="access-token"></a> Generate Access Token
-For the next exercises you will need an **OAuth2** token to access the ML Foundation services in your Cloud Foundry environment. We prepared a small helper application to facilitate you to retrieve this token. Please use the URL <https://get_token.cfapps.eu10.hana.ondemand.com/> to access this token generation application: you need to be logged in to your SAP Cloud Foundry account, to access it. This application is a tool that we provide during this workshop, but it is not part of our standard ML Foundation service offering. 
+For the upcoming exercises you will need an **OAuth2** token to access the ML Foundation services in your Cloud Foundry environment. We prepared a small helper application to facilitate you to retrieve this token. Please use the URL <https://get_token.cfapps.eu10.hana.ondemand.com/> to access this token generation application: you need to be logged in to your SAP Cloud Foundry account, to access it. This application is a tool that we provide during this workshop, but it is not part of our standard ML Foundation service offering.
 
 >NOTE: You do not need to do this step now! You'll need it several times in the next exercises and we will reference this chapter when needed.
 
-1. With your Firefox browser, navigate to the URL <https://get_token.cfapps.eu10.hana.ondemand.com/> 
+1. With your Chrome browser, navigate to the URL <https://get_token.cfapps.eu10.hana.ondemand.com/>
 
-1. A new window comes up where you need to enter 
+1. A new window comes up where you need to enter
 
 	- Authentication URL
 	- Client-ID
@@ -110,24 +105,35 @@ For the next exercises you will need an **OAuth2** token to access the ML Founda
 
 	![](images/18.png)
 
-1.	Go back to your service key and copy the required information from there. Paste all the needed parameters in the Token Generator app  
+1. Go back to your service key and copy the required information from there. Paste all the needed parameters in the Token Generator app  
 	![](images/19.png)
 
-1.	A token with the prefix **Bearer** is generated. Use the **Copy To Clipboard!** button to copy the key in the clipboard when needed 
-	>NOTE: Actually, you do not need to copy the token now, but we will reference this section when you need the token to access the ML foundation services  
+1. A token with the prefix **Bearer** is generated and is valid for up to 12 hours. Use the **Copy To Clipboard!** button to copy the key in the clipboard when needed
+	>NOTE: Actually, you do not need to copy the token now, but we will reference this section when you need the token to access the ML foundation services
 
 	![](images/20.png)
 
-1.	For your convenience, this application is also linked in the project you imported into SAP Web IDE Full-Stack. There you will find a button in the bar at the bottom of the screen, that will bring you directly to this Generate Token tool  
+1. It's also possible to obtain the token using Postman. Open a new tab in **Chrome** and open **Postman** from the **Apps** menu
 	![](images/21.png)
 
+1. Go back to **Chrome** and *copy* the service key **url** and paste it into **Postman** and add the following path to the end of the URL:
+
+  /oauth/token?grant_type=client_credentials
+
+	![](images/22.png)
+
+1. Select the **Authorization** tab, choose **Basic Auth** and paste the service key **Client-ID** as *Username* and **Client-Secret** as *Password*
+  ![](images/23.png)
+
+1. Press the **Send** button to send the request and the token will be returned in the **access_token** item. Don't forget to add the prefix **Bearer** with a space when pasting into your application!
 
 
 ## Summary
-This concludes the exercise. You should have learned how to 
+This concludes the exercise. You should have learned how to
 
 * access SAP Cloud Foundry Org and Space via SAP CP Cockpit
 * create Service Instance and Service Key for ML Foundation
 * generate an access token with the Generate Token tool
+* generate an access token with Postman
 
 Please proceed with next exercise.
