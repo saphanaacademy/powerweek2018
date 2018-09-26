@@ -116,10 +116,7 @@ For the upcoming exercises you will need an **OAuth2** token to access the ML Fo
 1. It's also possible to obtain the token using Postman. Open a new tab in **Chrome** and open **Postman** from the **Apps** menu
 	![](images/21.png)
 
-1. Go back to **Chrome** and *copy* the service key **url** and paste it into **Postman** and add the following path to the end of the URL:
-
-  /oauth/token?grant_type=client_credentials
-
+1. Go back to **Chrome** and *copy* the service key **url** and paste it into **Postman** and add the following path to the end of the URL: **/oauth/token?grant\_type=client\_credentials**
 	![](images/22.png)
 
 1. Select the **Authorization** tab, choose **Basic Auth** and paste the service key **Client-ID** as *Username* and **Client-Secret** as *Password*
