@@ -105,8 +105,17 @@ In this exercise, you will learn how to retrain the image classification service
 
 	```sh
   cf sapml config set ml\_foundation\_service\_name ml-foundation-trial-beta
+	```
+
+	```sh
   cf sapml config set auth\_server \<url\>
+	```
+
+	```sh
   cf sapml config set job\_api \<JOB\_SUBMISSION\_API\_URL\>
+	```
+
+	```sh
   cf sapml config set retraining\_image\_api \<IMAGE\_RETRAIN\_API\_URL\>
 	```
 
@@ -140,10 +149,9 @@ In this exercise, you will learn how to retrain the image classification service
 	```
 	![](images/50b.png)
 
-1. Check Minio client is installed (details on how to install Minio client are in the prerequisites to this workshop) then configure the remote host using the commands below (you need to take the missing values in the "<>" brackets from the filesystem configuration)
+1. Using Minio client (details on how to install Minio client are in the prerequisites to this workshop) configure the remote host using the commands below (you need to take the missing values in the "<>" brackets from the filesystem configuration)
 
 	```sh
-	mc
 	mc config host add saps3 https://<Endpoint> <Access key> <Secret key>
 	```
 	![](images/50c.png)
@@ -160,16 +168,18 @@ In this exercise, you will learn how to retrain the image classification service
 
 	```sh
 	cd downloads
+	```
+
+	```sh
 	mc cp Brands saps3/data --recursive
 	```
   ![](images/50f.png)
 
-1. List the Brands directory with the command
+1. List the Brands directory and display the training categories
 
 	```sh
 	cf sapml fs list Brands/
 	```
-	Display the training categories
 
 	```sh
 	cf sapml fs list Brands/training/
