@@ -36,7 +36,7 @@ Below are prerequisites required for the exercises in this workshop.
 1. [Install Java JRE](#install-java-jre)
 1. [Install Paho Client](#install-paho-client)
 1. [Install Chrome Postman application](#postman)
-1. [Install Chrome Postman Interceptor application](#postman-interceptor)  
+1. [Install Chrome Postman Interceptor extension](#postman-interceptor)  
 1. [Install Python](#install-python)
 1. [Install OpenSSL](#install-openssl)
 
@@ -138,8 +138,8 @@ For the workshop exercises you need to install the **Postman** application for C
 	![](images/25.png)
 
 
-## <a name="postman-interceptor"></a> Install Chrome Postman Interceptor application
-Another required tool is the Postman Interceptor app for Chrome. This can be found on the Chrome Web Store.
+## <a name="postman-interceptor"></a> Install Chrome Postman Interceptor extension
+Another required tool is the Postman Interceptor extension for Chrome. This can be found on the Chrome Web Store.
 
 1. Navigate to <https://chrome.google.com/webstore/search/postman%20interceptor> and select the **Postman Interceptor** tool  
 	![](images/26.png)

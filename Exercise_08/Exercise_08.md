@@ -101,7 +101,7 @@ In this exercise, you will learn how to retrain the image classification service
 	You will see that some values are not set  
 	![](images/48.png)
 
-1.	Set the correct values for your SAPML configuration using the following commands (you need to take the missing values in the "<>" brackets from your Service Key). As we are using the trial instance rather than a productive instance we need to adjust the ML service name
+1.	Set the correct values for your SAPML configuration using the following commands (you need to take the missing values in the "<>" brackets from your Service Key). As we are using the trial instance rather than a productive instance we will need to adjust the ML service name
 
 	```sh
   cf sapml config set ml_foundation_service_name ml-foundation-trial-beta
@@ -109,7 +109,6 @@ In this exercise, you will learn how to retrain the image classification service
   cf sapml config set job_api <JOB_SUBMISSION_API_URL>
 	cf sapml config set retraining_image_api <IMAGE_RETRAIN_API_URL>
 	```
-
 1. When done, enter
 
 	```sh
@@ -256,7 +255,7 @@ In this exercise, you will learn how to retrain the image classification service
 ### <a name="test-retrained-model"></a> Test the retrained model
 In order to test the retrained model you need to open the SAPUI5 application you have already used in the previous exercise. This application must be modified a little bit in order to produce the expected results.
 
-1. Go back to the **Neo Trial** in SAP Cloud Platform cockpit and navigate to **Connectivity** then **Destinations** and click on **Clone**
+1. Go back to the **Neo Trial** in SAP Cloud Platform cockpit and navigate to **Connectivity** then **Destinations** and click on **Clone** for the destination **sapui5ml-api**
 	![](images/25.png)
 
 1. Change the name to **retraining** and press the **Save** button
@@ -278,7 +277,7 @@ In order to test the retrained model you need to open the SAPUI5 application you
 1. If it's less than 12 hours since you last created an access token you can copy and paste the **Authorization** from the example above. Otherwise go back to Postman and re-create your access token and paste it into both **Authorization** items. You also need to set the **model name** and **version** values to match your retrained model. Finally **Save** your changes
 	![](images/28.png)
 
-1. Run the application by clicking on the green *Run* button in the toolbar and test the images contained in the [RetrainImages.zip](files/RetrainImages.zip?raw=true) directly on the blue camera icon. You should be able to see a new column containing the results of the classification based on the retrained model and appreciate the improvement in accuracy using the retrained model. For example, take BMW.jpg
+1. Run the application by clicking on the green *Run* button in the toolbar and test the images contained in the [RetrainImages.zip](files/RetrainImages.zip?raw=true) directly on the blue camera icon. You should be able to see a new column containing the results of the classification based on the retrained model and appreciate the improvement in accuracy using the retrained model. For example, take *BMW.jpg*
 	![](images/29.png)
 
 1. Congratulations! You have successfully retrained, deployed and tested the Image Classification model
@@ -306,7 +305,7 @@ It's also possible to perform inference via Postman - this way you can understan
 1. Let's change to the model we re-trained and deployed earlier. At the end of the request URL add **/models/<your_model_name>/versions/<version>** where you substitute your model name and version
 	![](images/35.png)
 
-1. Press the **Send** button to send the request and the results will be displayed - inference is much improved with the retrained model! You can do repeat this for other images
+1. Press the **Send** button to send the request and the results will be displayed - inference is much improved with the retrained model! You can repeat this for other images and examine the results
 	![](images/36.png)
 
 1. Congratulations! You have successfully tested the Image Classification model from Postman
