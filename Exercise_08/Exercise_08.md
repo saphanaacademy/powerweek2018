@@ -84,21 +84,18 @@ In this exercise, you will learn how to retrain the image classification service
 	You can copy this service key somewhere for your ease and comfort (e.g. Notepad++) because it will be needed later in the exercise  
 	![](images/43.png)
 
-1. Let's check that the Cloud Foundry SAPML Plugin is installed. Details on how to install the SAPML CLI plugin are in the prerequisites to this workshop. Run the command
+1. Let's check that the Cloud Foundry SAPML Plugin is installed. Details on how to install the SAPML CLI plugin are in the prerequisites to this workshop. Run the following command to get the list of all the installed plugins. You should see that SAPML is already installed  
 
 	```sh
 	cf plugins
 	```
-
-	to get the list of all the installed plugins. You should see that SAPML is already installed  
 	![](images/44.png)
 
-1. Enter the command:
+1. Enter the following command - you will see that some values are not set
 
 	```sh
 	cf sapml config get
 	```
-	You will see that some values are not set  
 	![](images/48.png)
 
 1. Set the correct values for your SAPML configuration using the following commands (you need to take the missing values in the "<>" brackets from your Service Key). As we are using the trial instance rather than a productive instance we will need to adjust the ML service name
@@ -157,11 +154,9 @@ In this exercise, you will learn how to retrain the image classification service
 	![](images/50c.png)
 
 1. Using Windows Explorer navigate to the folder where the retraining data file *Image-Classification-Retrain-Brands.zip* was downloaded previously and extract it via *Extract All* or using a tool like *7-zip*
-
   ![](images/50d.png)
 
 1. Observe the folder structure - training, test and validation with each of these having a subfolder for each classification value (in this case each brand) and images in the respective subfolders. Source data is split 80-10-10 (~80% training, ~10% test, and ~10% validation)
-
   ![](images/50e.png)
 
 1. From the command prompt, navigate to the folder where the Brands data was uncompressed and copy the data to the AWS S3 bucket using Minio client - this will take a minute or two
