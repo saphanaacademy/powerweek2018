@@ -10,8 +10,8 @@ In this exercise, you’ll learn how to
 
 * access SAP Cloud Foundry Org and Space via SAP CP Cockpit
 * create Service Instance and Service Key for ML Foundation
-* generate an access token with the Generate Token tool
 * generate an access token with Postman
+* adapt your SAPUI5 app to use your trial ML services instead of the SAP API Business Hub sandbox
 
 ## Target group
 
@@ -30,7 +30,7 @@ The goal of this exercise is to understand how to access SAP Cloud Foundry cockp
 1. [SAP Cloud Foundry Org and Space via SAP CP Cockpit](#cf-org-space)
 1. [Create Service Instance and Service Key for ML Foundation](#service-instance-key)
 1. [Generate Access Token](#access-token)
-
+1. [Adapt SAPUI5 App to use your Trial ML Foundation Services](#adapt-app)
 
 
 ### <a name="cf-org-space"></a> SAP Cloud Foundry Org and Space via SAP CP Cockpit
@@ -55,7 +55,7 @@ You used your SAP Cloud Platform trial account to access the SAP API Business Hu
 
 
 ### <a name="service-instance-key"></a> Create Service Instance and Service Key for ML Foundation
-Before we continue we need to create a service instance and get a service key from the ML Foundation service. A service key enables the ML Foundation Service to be used outside the CF environment. In this exercise, you need to create such a key to be used by an external application like Swagger UI or Postman. The service key contains all the URLs and credentials (clientid and clientsecret) required for you to access the ML Foundation service running for your trial account. Please keep this browser window open, since you will need it in the next section.
+Before we continue we need to create a service instance and get a service key from the ML Foundation service. A service key enables the ML Foundation Service to be used outside the CF environment. In this exercise, you need to create such a key to be used by an external application like Swagger UI or Postman. The service key contains all the URLs and credentials (clientid and clientsecret) required for you to access the ML Foundation service running for your trial account.
 
 1.	Within your space navigate to **Services -> Service Marketplace**, then click on the **ml-foundation-trial-beta** tile  
 	![](images/08.png)
@@ -91,38 +91,35 @@ Before we continue we need to create a service instance and get a service key fr
 
 
 ### <a name="access-token"></a> Generate Access Token
-For the upcoming exercises you will need an **OAuth2** token to access the ML Foundation services in your Cloud Foundry environment. We prepared a small helper application to facilitate you to retrieve this token. Please use the URL <https://get_token.cfapps.eu10.hana.ondemand.com/> to access this token generation application: you need to be logged in to your SAP Cloud Foundry account, to access it. This application is a tool that we provide during this workshop, but it is not part of our standard ML Foundation service offering.
+For the upcoming exercises you will need an **OAuth2** token to access the ML Foundation services in your Cloud Foundry environment.
 
->NOTE: You do not need to do this step now! You'll need it several times in the next exercises and we will reference this chapter when needed.
-
-1. With your Chrome browser, navigate to the URL <https://get_token.cfapps.eu10.hana.ondemand.com/>
-
-1. A new window comes up where you need to enter
-
-	- Authentication URL
-	- Client-ID
-	- Client-Secret  
-
-	![](images/18.png)
-
-1. Go back to your service key and copy the required information from there. Paste all the needed parameters in the Token Generator app  
-	![](images/19.png)
-
-1. A token with the prefix **Bearer** is generated and is valid for up to 12 hours. Use the **Copy To Clipboard!** button to copy the key in the clipboard when needed
-	>NOTE: Actually, you do not need to copy the token now, but we will reference this section when you need the token to access the ML foundation services
-
-	![](images/20.png)
-
-1. It's also possible to obtain the token using Postman. Open a new tab in **Chrome** and open **Postman** from the **Apps** menu
+1. You can obtain the access token using Postman. Open a new tab in **Chrome** and open **Postman** from the **Apps** menu
 	![](images/21.png)
 
 1. Go back to **Chrome** and *copy* the service key **url** and paste it into **Postman** and add the following path to the end of the URL: **/oauth/token?grant\_type=client\_credentials**
 	![](images/22.png)
 
-1. Select the **Authorization** tab, choose **Basic Auth** and paste the service key **Client-ID** as *Username* and **Client-Secret** as *Password*
+1. Select the **Authorization** tab, choose **Basic Auth** and paste the service key **clientid** as *Username* and **clientsecret** as *Password*
   ![](images/23.png)
 
-1. Press the **Send** button to send the request and the token will be returned in the **access_token** item. Don't forget to add the prefix **Bearer** with a space when pasting into your application!
+1. Press the **Send** button to send the request and the token will be returned in the **access_token** item. You don't need the access token just yet - but now you know how to generate one. Typically an access token is valid for up to 12 hours. Don't forget to add the prefix **Bearer** with a space when pasting into your application!
+	![](images/24.png)
+
+
+### <a name="adapt-app"></a> Adapt SAPUI5 App to use your Trial ML Foundation Services
+For the upcoming exercises you will need an **OAuth2** token to access the ML Foundation services in your Cloud Foundry environment.
+
+1. Go back to the **Neo Trial** in SAP Cloud Platform cockpit and navigate to **Connectivity** then **Destinations** and **Edit** the item *sapui5ml-api*
+	![](images/25.png)
+
+1. Change the URL to your trial URL for image classification as defined in your Service Key item **IMAGE_CLASSIFICATION_URL** after removing **/image/classification** from the end, then press **Save**
+	![](images/26.png)
+
+1. Open SAP Web IDE Full-Stack as used in the previous exercise and for the **MLFSAPUI5_Project_Exercise** project edit **settings.json**. Change the **url** item to **/ml/image/classification**. Then in the *headers* section replace **APIKey** with **Authorization** and paste in your access token as value prefixed by **Bearer** and a space. Finally, **Save** the file
+	![](images/27.png)
+
+1. Run the application and test as previously. All should be working OK except that this time it's using your trial ML service rather than the sandbox service from SAP API Business Hub.
+
 
 
 ## Summary
@@ -130,7 +127,7 @@ This concludes the exercise. You should have learned how to
 
 * access SAP Cloud Foundry Org and Space via SAP CP Cockpit
 * create Service Instance and Service Key for ML Foundation
-* generate an access token with the Generate Token tool
 * generate an access token with Postman
+* adapt your SAPUI5 app to use your trial ML services instead of the SAP API Business Hub sandbox
 
 Please proceed with next exercise.
