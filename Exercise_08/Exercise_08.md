@@ -93,7 +93,7 @@ In this exercise, you will learn how to retrain the image classification service
 	to get the list of all the installed plugins. You should see that SAPML is already installed  
 	![](images/44.png)
 
-1.	Enter the command:
+1. Enter the command:
 
 	```sh
 	cf sapml config get
@@ -101,21 +101,20 @@ In this exercise, you will learn how to retrain the image classification service
 	You will see that some values are not set  
 	![](images/48.png)
 
-1.	Set the correct values for your SAPML configuration using the following commands (you need to take the missing values in the "<>" brackets from your Service Key). As we are using the trial instance rather than a productive instance we will need to adjust the ML service name
+1. Set the correct values for your SAPML configuration using the following commands (you need to take the missing values in the "<>" brackets from your Service Key). As we are using the trial instance rather than a productive instance we will need to adjust the ML service name
 
 	```sh
   cf sapml config set ml_foundation_service_name ml-foundation-trial-beta
-	cf sapml config set auth_server <url>
+  cf sapml config set auth_server <url>
   cf sapml config set job_api <JOB_SUBMISSION_API_URL>
-	cf sapml config set retraining_image_api <IMAGE_RETRAIN_API_URL>
+  cf sapml config set retraining_image_api <IMAGE_RETRAIN_API_URL>
 	```
-1. When done, enter
+
+1. When done, enter to check that everything is set correctly
 
 	```sh
 	cf sapml config get
 	```
-
-	to check that everything is set correctly  
 	![](images/49.png)
 
 1. Initialize the cloud filesystem with the command
@@ -125,13 +124,11 @@ In this exercise, you will learn how to retrain the image classification service
 	```
 	![](images/50.png)
 
-1. List the root directory with the command
+1. List the root directory with the command - nothing should be displayed and we will now upload some retraining data
 
 	```sh
 	cf sapml fs list
 	```
-
-	Nothing should be displayed - we will now upload some retraining data
 
 
 ### <a name="upload-training-data"></a>Upload training data
