@@ -105,8 +105,16 @@ In this exercise, you will learn how to retrain the image classification service
 
 	```sh
   cf sapml config set ml_foundation_service_name ml-foundation-trial-beta
+	```
+	```sh
   cf sapml config set auth_server <url>
+	```
+
+	```sh
   cf sapml config set job_api <JOB_SUBMISSION_API_URL>
+	```
+
+	```sh
   cf sapml config set retraining_image_api <IMAGE_RETRAIN_API_URL>
 	```
 
