@@ -98,13 +98,13 @@ In this exercise, you will learn how to retrain the image classification service
 	```
 	![](images/48.png)
 
-1. Set the correct values for your SAPML configuration using the following commands \(you need to take the missing values in the "<>" brackets from your Service Key\). As we are using the trial instance rather than a productive instance we will need to adjust the ML service name
+1. Set the correct values for your SAPML configuration using the following commands \(you need to take the missing values in the "<>" brackets from your Service Key\). As we are using the trial instance rather than a productive instance we will also need to adjust the ML foundation service name
 
 	```
-	cf sapml config set ml_foundation_service_name ml-foundation-trial-beta
 	cf sapml config set auth_server <url>
 	cf sapml config set job_api <JOB_SUBMISSION_API_URL>
 	cf sapml config set retraining_image_api <IMAGE_RETRAIN_API_URL>
+	cf sapml config set ml_foundation_service_name ml-foundation-trial-beta
 	```
 
 1. When done, enter to check that everything is set correctly
@@ -156,22 +156,17 @@ In this exercise, you will learn how to retrain the image classification service
 	cd downloads
 	```
 
-1. Copy the data to your AWS S3 bucket using Minio client. This will take a minute or two to complete
+1. Copy the data to your AWS S3 bucket using Minio client which will take a minute or two to complete
 
   ```
-  mc cp Brands saps3/data --recursive
+	mc cp Brands saps3/data --recursive
   ```
   ![](images/50f.png)
 
-1. List the Brands directory
+1. List the Brands directory and display the training categories
 
   ```
-  cf sapml fs list Brands/
-  ```
-
-1. Display the training categories
-
-	```
+	cf sapml fs list Brands/
 	cf sapml fs list Brands/training/
 	```
 	![](images/51.png)
