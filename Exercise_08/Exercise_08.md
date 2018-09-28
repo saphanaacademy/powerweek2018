@@ -55,7 +55,7 @@ In this exercise, you will learn how to retrain the image classification service
 
 1.	First, let's check if your Cloud Foundry CLI is correctly installed. Open a command prompt window and enter
 
-	```sh
+	```
 	cf -v
 	```
 
@@ -64,7 +64,7 @@ In this exercise, you will learn how to retrain the image classification service
 
 1. Now, login to SAP Cloud Platform cloud foundry environment with the command
 
-	```sh
+	```
 	cf login -a <YOUR_API_ENDPOINT> -u <YOUR_EMAIL>
 	```
 	where **\<YOUR\_API\_ENDPOINT\>** must be replaced with the endpoint URL you can get when you navigate in the cockpit to your subaccount and **\<YOUR\_EMAIL\>** with the email associated with your SAP Cloud Platform trial account  
@@ -77,7 +77,7 @@ In this exercise, you will learn how to retrain the image classification service
 
 1.	Enter the command `cf service-key <INSTANCE_NAME> <SERVICE_KEY_NAME>` to display your service key and make sure that everything is available. If you have followed the naming convention we used in the previous exercise, your command should be
 
-	```sh
+	```
 	cf service-key ml ml-sk
 	```
 
@@ -86,59 +86,59 @@ In this exercise, you will learn how to retrain the image classification service
 
 1. Let's check that the Cloud Foundry SAPML Plugin is installed. Details on how to install the SAPML CLI plugin are in the prerequisites to this workshop. Run the following command to get the list of all the installed plugins. You should see that SAPML is already installed  
 
-	```sh
+	```
 	cf plugins
 	```
 	![](images/44.png)
 
 1. Enter the following command - you will see that some values are not set
 
-	```sh
+	```
 	cf sapml config get
 	```
 	![](images/48.png)
 
 1. Set the correct values for your SAPML configuration using the following commands (you need to take the missing values in the "<>" brackets from your Service Key). As we are using the trial instance rather than a productive instance we will need to adjust the ML service name
 
-  ```sh
+  ```
   cf sapml config set ml\_foundation\_service\_name ml-foundation-trial-beta
   ```
 
 1. Set the authentication server URL
 
-	```sh
+	```
   cf sapml config set auth\_server \<url\>
 	```
 
 1. Set the job API URL
 
-	```sh
+	```
   cf sapml config set job\_api \<JOB\_SUBMISSION\_API\_URL\>
 	```
 
 1. Set the image retraining API URL
 
-	```sh
+	```
   cf sapml config set retraining\_image\_api \<IMAGE\_RETRAIN\_API\_URL\>
 	```
 
 1. When done, enter to check that everything is set correctly
 
-	```sh
+	```
 	cf sapml config get
 	```
 	![](images/49.png)
 
 1. Initialize the cloud filesystem with the command
 
-	```sh
+	```
 	cf sapml fs init
 	```
 	![](images/50.png)
 
 1. List the root directory with the command - nothing should be displayed and we will now upload some retraining data
 
-	```sh
+	```
 	cf sapml fs list
 	```
 
@@ -147,46 +147,47 @@ In this exercise, you will learn how to retrain the image classification service
 
 1. Display the filesystem configuration with the command
 
-	```sh
+	```
 	cf sapml fs config
 	```
 	![](images/50b.png)
 
-1. Using Minio client (details on how to install Minio client are in the prerequisites to this workshop) configure the remote host using the commands below (you need to take the missing values in the "<>" brackets from the filesystem configuration)
+2. Using Minio client (details on how to install Minio client are in the prerequisites to this workshop) configure the remote host using the commands below (you need to take the missing values in the "<>" brackets from the filesystem configuration)
 
-	```sh
+	```
 	mc config host add saps3 https://<Endpoint> <Access key> <Secret key>
 	```
 	![](images/50c.png)
 
-1. Using Windows Explorer navigate to the folder where the retraining data file *Image-Classification-Retrain-Brands.zip* was downloaded previously and extract it via *Extract All* or using a tool like *7-zip*
+2. Using Windows Explorer navigate to the folder where the retraining data file *Image-Classification-Retrain-Brands.zip* was downloaded previously and extract it via *Extract All* or using a tool like *7-zip*
   ![](images/50d.png)
 
-1. Observe the folder structure - training, test and validation with each of these having a subfolder for each classification value (in this case each brand) and images in the respective subfolders. Source data is split 80-10-10 (80% training, 10% test and 10% validation)
+2. Observe the folder structure - training, test and validation with each of these having a subfolder for each classification value (in this case each brand) and images in the respective subfolders. Source data is split 80-10-10 (80% training, 10% test and 10% validation)
+
   ![](images/50e.png)
 
-1. From the command prompt, navigate to the folder where the Brands data was extracted
+2. From the command prompt, navigate to the folder where the Brands data was extracted
 
-	```sh
+	```
 	cd downloads
 	```
 
-1. Copy the data to the AWS S3 bucket using Minio client - this will take a minute or two
+2. Copy the data to the AWS S3 bucket using Minio client - this will take a minute or two
 
-	```sh
+	```
 	mc cp Brands saps3/data --recursive
 	```
   ![](images/50f.png)
 
-1. List the Brands directory
+2. List the Brands directory
 
-	```sh
+	```
 	cf sapml fs list Brands/
 	```
 
-1. Display the training categories
+2. Display the training categories
 
-	```sh
+	```
 	cf sapml fs list Brands/training/
 	```
 	![](images/51.png)
@@ -211,14 +212,14 @@ In this exercise, you will learn how to retrain the image classification service
 
 1. Start the retrain process using the SAPML CLI command
 
-	```sh
+	```
 	cf sapml retraining job_submit retrain.json -m image
 	```
 	![](images/53.png)
 
 1. Check the job status: it could be PENDING  
 
-	```sh
+	```
 	cf sapml retraining jobs -m image
 	```
 	![](images/54.png)
@@ -228,14 +229,14 @@ In this exercise, you will learn how to retrain the image classification service
 
 1. List the directory to get the name of the executed job
 
-	```sh
+	```
 	cf sapml fs list
 	```
 	![](images/56.png)
 
 1. Download the retrain log *retraining.log* by specifying the job name in the remote path and the local path where you want to put the downloaded log
 
-	```sh
+	```
 	cf sapml fs get [REMOTE_PATH]retraining.log [LOCAL_PATH]retraining.log
 	```
 	![](images/57.png)
@@ -250,14 +251,14 @@ In this exercise, you will learn how to retrain the image classification service
 
 1. Deploy the retrained model by specifying the model name and version
 
-	```sh
+	```
 	cf sapml retraining model_deploy [MODEL_NAME] [MODEL_VERSION_NUMBER] -m image
 	```
 	![](images/59.png)
 
 1. Check the deployment status: it takes a couple of minutes until the model container with the retrained model is up and running. At the end of the process you should get a deployment status "SUCCEEDED" message.
 
-	```sh
+	```
 	cf sapml retraining model_deployments -m image
 	```
 	![](images/60.png)
