@@ -100,18 +100,18 @@ In this exercise, you will learn how to retrain the image classification service
 
 1. Set the correct values for your SAPML configuration using the following commands (you need to take the missing values in the "<>" brackets from your Service Key). As we are using the trial instance rather than a productive instance we will need to adjust the ML service name
 
+  ```sh
+  cf sapml config abc def ghi-jkl
+  ```
 	```sh
   cf sapml config set ml\_foundation\_service\_name ml-foundation-trial-beta
 	```
-
 	```sh
   cf sapml config set auth\_server \<url\>
 	```
-
 	```sh
   cf sapml config set job\_api \<JOB\_SUBMISSION\_API\_URL\>
 	```
-
 	```sh
   cf sapml config set retraining\_image\_api \<IMAGE\_RETRAIN\_API\_URL\>
 	```
@@ -156,7 +156,7 @@ In this exercise, you will learn how to retrain the image classification service
 1. Using Windows Explorer navigate to the folder where the retraining data file *Image-Classification-Retrain-Brands.zip* was downloaded previously and extract it via *Extract All* or using a tool like *7-zip*
   ![](images/50d.png)
 
-1. Observe the folder structure - training, test and validation with each of these having a subfolder for each classification value (in this case each brand) and images in the respective subfolders. Source data is split 80-10-10 (~80% training, ~10% test, and ~10% validation)
+1. Observe the folder structure - training, test and validation with each of these having a subfolder for each classification value (in this case each brand) and images in the respective subfolders. Source data is split 80-10-10 (80% training, 10% test and 10% validation)
   ![](images/50e.png)
 
 1. From the command prompt, navigate to the folder where the Brands data was uncompressed and copy the data to the AWS S3 bucket using Minio client - this will take a minute or two
@@ -164,7 +164,6 @@ In this exercise, you will learn how to retrain the image classification service
 	```sh
 	cd downloads
 	```
-
 	```sh
 	mc cp Brands saps3/data --recursive
 	```
@@ -175,11 +174,11 @@ In this exercise, you will learn how to retrain the image classification service
 	```sh
 	cf sapml fs list Brands/
 	```
-
 	```sh
 	cf sapml fs list Brands/training/
 	```
 	![](images/51.png)
+
 
 
 ### <a name="retrain-model"></a>Retrain the model
@@ -230,7 +229,6 @@ In this exercise, you will learn how to retrain the image classification service
 	![](images/57.png)
 
 1. View the retrain log by opening it with your favorite text editor. **Take note of the version number at the bottom of the log (in your case it should be 1)**. This version is incremented for every retrain run when using the same model name. The model name is the "brands-01" string you have previously specified in the *retrain.json* file
-
 	![](images/58.png)
 	![](images/58b.png)
 
