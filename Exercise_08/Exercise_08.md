@@ -166,10 +166,10 @@ In this exercise, you will learn how to retrain the image classification service
 1. List the Brands directory and display the training categories
 
   ```
-	cf sapml fs list Brands/
-	cf sapml fs list Brands/training/
-	```
-	![](images/51.png)
+  cf sapml fs list Brands/
+  cf sapml fs list Brands/training/
+  ```
+  ![](images/51.png)
 
 
 
