@@ -56,7 +56,7 @@ In this exercise, you will learn how to retrain the image classification service
 1.	First, let's check if your Cloud Foundry CLI is correctly installed. Open a command prompt window and enter
 
 	```
-	cf \-v
+	cf -v
 	```
 
 	You should get a version equal or greater to the one showed in the picture. If not, you need to install the latest CF CLI as explained in the prerequisites to this workshop  
@@ -65,7 +65,7 @@ In this exercise, you will learn how to retrain the image classification service
 1. Now, login to SAP Cloud Platform cloud foundry environment with the command
 
 	```
-	cf login \\-a \<YOUR\_API\_ENDPOINT\> \-u \<YOUR\_EMAIL\>
+	cf login -a <YOUR_API_ENDPOINT> -u <YOUR_EMAIL>
 	```
 	where **\<YOUR\_API\_ENDPOINT\>** must be replaced with the endpoint URL you can get when you navigate in the cockpit to your subaccount and **\<YOUR\_EMAIL\>** with the email associated with your SAP Cloud Platform trial account  
 	![](images/41.png)
@@ -78,7 +78,7 @@ In this exercise, you will learn how to retrain the image classification service
 1.	Enter the command \`cf service\-key \<INSTANCE\_NAME\> \<SERVICE\_KEY\_NAME\>\` to display your service key and make sure that everything is available. If you have followed the naming convention we used in the previous exercise, your command should be
 
 	```
-	cf service\-key ml ml\-sk
+	cf service-key ml ml-sk
 	```
 
 	You can copy this service key somewhere for your ease and comfort (e.g. Notepad++) because it will be needed later in the exercise  
@@ -101,25 +101,25 @@ In this exercise, you will learn how to retrain the image classification service
 1. Set the correct values for your SAPML configuration using the following commands (you need to take the missing values in the "<>" brackets from your Service Key). As we are using the trial instance rather than a productive instance we will need to adjust the ML service name
 
   ```
-  cf sapml config set ml\_foundation\_service\_name ml\-foundation\-trial\-beta
+  cf sapml config set ml_foundation_service_name ml-foundation-trial-beta
   ```
 
 1. Set the authentication server URL
 
 	```
-  cf sapml config set auth\_server \<url\>
+  cf sapml config set auth_server <url>
 	```
 
 1. Set the job API URL
 
 	```
-  cf sapml config set job\_api \<JOB\_SUBMISSION\_API\_URL\>
+  cf sapml config set job_api <JOB_SUBMISSION_API_URL>
 	```
 
 1. Set the image retraining API URL
 
 	```
-  cf sapml config set retraining\_image\_api \<IMAGE\_RETRAIN\_API\_URL\>
+  cf sapml config set retraining_image_api <IMAGE_RETRAIN_API_URL>
 	```
 
 1. When done, enter to check that everything is set correctly
@@ -155,7 +155,7 @@ In this exercise, you will learn how to retrain the image classification service
 1. Using Minio client (details on how to install Minio client are in the prerequisites to this workshop) configure the remote host using the commands below (you need to take the missing values in the "<>" brackets from the filesystem configuration)
 
 	```
-	mc config host add saps3 https://\<Endpoint\> \<Access key\> \<Secret key\>
+	mc config host add saps3 https://<Endpoint> <Access key> <Secret key>
 	```
 	![](images/50c.png)
 
@@ -172,10 +172,10 @@ In this exercise, you will learn how to retrain the image classification service
 	cd downloads
 	```
 
-1. Copy the data to the AWS S3 bucket using Minio client - this will take a minute or two
+1. Copy the data to your AWS S3 bucket using Minio client - this will take a minute or two
 
   ```
-  mc cp Brands saps3/data \-\-recursive
+  mc cp Brands saps3/data --recursive
   ```
   ![](images/50f.png)
 
@@ -207,20 +207,20 @@ In this exercise, you will learn how to retrain the image classification service
   		"learningRate": 0.001
 	}
 	```
-	Let me give you a bit of explanation about the content of this file. You need to specify the data set name and a model name. As our folder structure has the root name "Brands", we choose the value "Brands" for our dataset. Give it a new model name of your choice and save it (e.g. brands-01). You can add optional retrain parameters (e.g. learning rate). Once finished editing, remember to **save** the file  
+	Let me give you a bit of explanation about the content of this file. You need to specify the data set name and a model name. As our folder structure has the root name "Brands", we choose the value "Brands" for our dataset. Give it a new model name of your choice and save it (e.g. "brands-01"). You can add optional retrain parameters (e.g. learning rate). Once finished editing, remember to **save** the file  
 	![](images/52.png)
 
 1. Start the retrain process using the SAPML CLI command
 
 	```
-	cf sapml retraining job\_submit retrain\.json \-m image
+	cf sapml retraining job_submit retrain.json -m image
 	```
 	![](images/53.png)
 
 1. Check the job status: it could be PENDING  
 
 	```
-	cf sapml retraining jobs \-m image
+	cf sapml retraining jobs -m image
 	```
 	![](images/54.png)
 
@@ -237,7 +237,7 @@ In this exercise, you will learn how to retrain the image classification service
 1. Download the retrain log *retraining.log* by specifying the job name in the remote path and the local path where you want to put the downloaded log
 
 	```
-	cf sapml fs get \<REMOTE\_PATH\>retraining\.log \<LOCAL\_PATH\>retraining\.log
+	cf sapml fs get <REMOTE_PATH>retraining.log <LOCAL_PATH>retraining.log
 	```
 	![](images/57.png)
 
@@ -252,14 +252,14 @@ In this exercise, you will learn how to retrain the image classification service
 1. Deploy the retrained model by specifying the model name and version
 
 	```
-	cf sapml retraining model\_deploy \<MODEL\_NAME\> \<MODEL\_VERSION\_NUMBER\> \-m image
+	cf sapml retraining model_deploy <MODEL_NAME> <MODEL_VERSION_NUMBER> -m image
 	```
 	![](images/59.png)
 
 1. Check the deployment status: it takes a couple of minutes until the model container with the retrained model is up and running. At the end of the process you should get a deployment status "SUCCEEDED" message.
 
 	```
-	cf sapml retraining model\_deployments \-m image
+	cf sapml retraining model_deployments -m image
 	```
 	![](images/60.png)
 
