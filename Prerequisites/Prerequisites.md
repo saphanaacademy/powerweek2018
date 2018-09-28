@@ -71,13 +71,11 @@ You need Neo trial SAP Cloud Platform to complete some of the hands-on exercises
 
 	![](images/14.png)
 
-	>NOTE: Please, if possible, enable Portal as first service.
-
 
 ## <a name="sign-up-cf"></a>Sign up for SAP Cloud Platform Cloud Foundry trial account
 Sign up also for SAP Cloud Platform Cloud Foundry trial account.
 
-1.	From SAP Cloud Platform Cockpit, click on Home.  Then, click on **Cloud Foundry Trial**. Select a **Region**, for example, US East (VA) or Europe (Frankfurt)  
+1.	From SAP Cloud Platform Cockpit, click on Home.  Then, click on **Cloud Foundry Trial**. Select **Region** *Europe (Frankfurt)* and press **OK**  
 	![](images/15.png)
 1.	Select the Global account that matches your login. Next, select the trial sub-account  
 	![](images/16.png)	 
