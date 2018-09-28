@@ -56,7 +56,7 @@ In this exercise, you will learn how to retrain the image classification service
 1.	First, let's check if your Cloud Foundry CLI is correctly installed. Open a command prompt window and enter
 
 	```
-	cf -v
+	cf \-v
 	```
 
 	You should get a version equal or greater to the one showed in the picture. If not, you need to install the latest CF CLI as explained in the prerequisites to this workshop  
@@ -65,7 +65,7 @@ In this exercise, you will learn how to retrain the image classification service
 1. Now, login to SAP Cloud Platform cloud foundry environment with the command
 
 	```
-	cf login -a <YOUR_API_ENDPOINT> -u <YOUR_EMAIL>
+	cf login \\-a \<YOUR\_API\_ENDPOINT\> \-u \<YOUR\_EMAIL\>
 	```
 	where **\<YOUR\_API\_ENDPOINT\>** must be replaced with the endpoint URL you can get when you navigate in the cockpit to your subaccount and **\<YOUR\_EMAIL\>** with the email associated with your SAP Cloud Platform trial account  
 	![](images/41.png)
@@ -75,10 +75,10 @@ In this exercise, you will learn how to retrain the image classification service
 
 	![](images/42.png)
 
-1.	Enter the command `cf service-key <INSTANCE_NAME> <SERVICE_KEY_NAME>` to display your service key and make sure that everything is available. If you have followed the naming convention we used in the previous exercise, your command should be
+1.	Enter the command \`cf service\-key \<INSTANCE\_NAME\> \<SERVICE\_KEY\_NAME\>\` to display your service key and make sure that everything is available. If you have followed the naming convention we used in the previous exercise, your command should be
 
 	```
-	cf service-key ml ml-sk
+	cf service\-key ml ml\-sk
 	```
 
 	You can copy this service key somewhere for your ease and comfort (e.g. Notepad++) because it will be needed later in the exercise  
@@ -213,14 +213,14 @@ In this exercise, you will learn how to retrain the image classification service
 1. Start the retrain process using the SAPML CLI command
 
 	```
-	cf sapml retraining job_submit retrain.json -m image
+	cf sapml retraining job\_submit retrain\.json \-m image
 	```
 	![](images/53.png)
 
 1. Check the job status: it could be PENDING  
 
 	```
-	cf sapml retraining jobs -m image
+	cf sapml retraining jobs \-m image
 	```
 	![](images/54.png)
 
@@ -237,7 +237,7 @@ In this exercise, you will learn how to retrain the image classification service
 1. Download the retrain log *retraining.log* by specifying the job name in the remote path and the local path where you want to put the downloaded log
 
 	```
-	cf sapml fs get [REMOTE_PATH]retraining.log [LOCAL_PATH]retraining.log
+	cf sapml fs get \<REMOTE\_PATH\>retraining\.log \<LOCAL\_PATH\>retraining\.log
 	```
 	![](images/57.png)
 
@@ -252,14 +252,14 @@ In this exercise, you will learn how to retrain the image classification service
 1. Deploy the retrained model by specifying the model name and version
 
 	```
-	cf sapml retraining model_deploy [MODEL_NAME] [MODEL_VERSION_NUMBER] -m image
+	cf sapml retraining model\_deploy \<MODEL\_NAME\> \<MODEL\_VERSION\_NUMBER\> \-m image
 	```
 	![](images/59.png)
 
 1. Check the deployment status: it takes a couple of minutes until the model container with the retrained model is up and running. At the end of the process you should get a deployment status "SUCCEEDED" message.
 
 	```
-	cf sapml retraining model_deployments -m image
+	cf sapml retraining model\_deployments \-m image
 	```
 	![](images/60.png)
 
