@@ -98,16 +98,16 @@ In this exercise, you will learn how to retrain the image classification service
 	```
 	![](images/48.png)
 
-1. Set the correct values for your SAPML configuration using the following commands (you need to take the missing values in the "<>" brackets from your Service Key). As we are using the trial instance rather than a productive instance we will need to adjust the ML service name
+1. Set the correct values for your SAPML configuration using the following commands
 
-	```sh
-  cf sapml config set ml_foundation_service_name ml-foundation-trial-beta
-	cf sapml config set ml_foundation_service_name ml-foundation-trial-beta2
-	cf sapml config set ml_foundation_service_name ml-foundation-trial-beta3
-  cf sapml config set auth_server <url>
-  cf sapml config set job_api <JOB_SUBMISSION_API_URL>
-  cf sapml config set retraining_image_api <IMAGE_RETRAIN_API_URL>
-	```
+```sh
+cf sapml config set ml_foundation_service_name ml-foundation-trial-beta
+cf sapml config set ml_foundation_service_name ml-foundation-trial-beta2
+cf sapml config set ml_foundation_service_name ml-foundation-trial-beta3
+cf sapml config set auth_server <url>
+cf sapml config set job_api <JOB_SUBMISSION_API_URL>
+cf sapml config set retraining_image_api <IMAGE_RETRAIN_API_URL>
+```
 
 1. When done, enter to check that everything is set correctly
 
