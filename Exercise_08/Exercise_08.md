@@ -98,16 +98,14 @@ In this exercise, you will learn how to retrain the image classification service
 	```
 	![](images/48.png)
 
-1. Set the correct values for your SAPML configuration using the following commands
+1. Set the correct values for your SAPML configuration using the following commands \(you need to take the missing values in the "<>" brackets from your Service Key\). As we are using the trial instance rather than a productive instance we will need to adjust the ML service name
 
-```sh
-cf sapml config set ml_foundation_service_name ml-foundation-trial-beta
-cf sapml config set ml_foundation_service_name ml-foundation-trial-beta2
-cf sapml config set ml_foundation_service_name ml-foundation-trial-beta3
-cf sapml config set auth_server <url>
-cf sapml config set job_api <JOB_SUBMISSION_API_URL>
-cf sapml config set retraining_image_api <IMAGE_RETRAIN_API_URL>
-```
+	```
+	cf sapml config set ml_foundation_service_name ml-foundation-trial-beta
+	cf sapml config set auth_server <url>
+	cf sapml config set job_api <JOB_SUBMISSION_API_URL>
+	cf sapml config set retraining_image_api <IMAGE_RETRAIN_API_URL>
+	```
 
 1. When done, enter to check that everything is set correctly
 
@@ -149,7 +147,7 @@ cf sapml config set retraining_image_api <IMAGE_RETRAIN_API_URL>
 1. Using Windows Explorer navigate to the folder where the retraining data file *Image-Classification-Retrain-Brands.zip* was downloaded previously and extract it via *Extract All* or using a tool like *7-zip*
   ![](images/50d.png)
 
-1. Observe the folder structure - training, test and validation with each of these having a subfolder for each classification value and images in the respective subfolders. Source data is split 80-10-10 (80% training, 10% test and 10% validation)
+1. Observe the folder structure - training, test and validation with each of these having a subfolder for each classification value and images in the respective subfolders. Source data is split 80-10-10 \(80% training, 10% test and 10% validation\)
   ![](images/50e.png)
 
 1. From the command prompt, navigate to the folder where the Brands data was extracted
@@ -158,7 +156,7 @@ cf sapml config set retraining_image_api <IMAGE_RETRAIN_API_URL>
 	cd downloads
 	```
 
-1. Copy the data to your AWS S3 bucket using Minio client - this will take a minute or two
+1. Copy the data to your AWS S3 bucket using Minio client. This will take a minute or two to complete
 
   ```
   mc cp Brands saps3/data --recursive
