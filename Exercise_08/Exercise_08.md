@@ -100,7 +100,7 @@ In this exercise, you will learn how to retrain the image classification service
 
 1. Set the correct values for your SAPML configuration using the following commands (you need to take the missing values in the "<>" brackets from your Service Key). As we are using the trial instance rather than a productive instance we will need to adjust the ML service name
 
-  ```
+	```sh
   cf sapml config set ml_foundation_service_name ml-foundation-trial-beta
 	cf sapml config set ml_foundation_service_name ml-foundation-trial-beta2
 	cf sapml config set ml_foundation_service_name ml-foundation-trial-beta3
