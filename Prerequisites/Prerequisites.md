@@ -27,16 +27,16 @@ Below are prerequisites required for the exercises in this workshop.
 
 1. [Bring Your Own Laptop with Admin Access](#laptop)
 1. [Remote Desktop Connection](#rdc)
-1. [Sign up for SAP Cloud Platform Neo trial account](#sign-up-neo)
-1. [Sign up for SAP Cloud Platform Cloud Foundry trial account](#sign-up-cf)
+1. [Sign up for SAP Cloud Platform Trial account](#sign-up-trial)
 1. [Install Cloud Foundry CLI](#install-cf-cli)
 1. [Install MTA Plugin](#install-mta-cli)
 1. [Install ML Foundation CLI](#install-ml-cli)
 1. [Install Minio Client](#install-minio-client)
-1. [Install Java JRE](#install-java-jre)
-1. [Install Paho Client](#install-paho-client)
 1. [Install Chrome Postman application](#postman)
 1. [Install Chrome Postman Interceptor extension](#postman-interceptor)  
+1. [Install Java JRE](#install-java-jre)
+1. [Install Paho Client](#install-paho-client)
+1. [Install IoT Services Edge](#install-iot-services-edge)
 1. [Install Python](#install-python)
 1. [Install OpenSSL](#install-openssl)
 
@@ -48,37 +48,33 @@ Please bring the laptop that you have admin access for hands-on exercises.
 
 ## <a name="rdc"></a> Remote Desktop Connection
 
-In order to connect with the Virtual Machines we have prepared for you, you need to have the Remote Desktop Connection (RDC) tool installed on your machine. For Windows users, RDC comes already installed, so if you have Windows you don't have to worry about it. If you are MAC user, instead, you can download it for free from the Mac App Store.  
+In order to connect with the Virtual Machines we have prepared for you, you need to have the Remote Desktop Connection (RDC) tool installed on your machine. For Windows users, RDC comes already installed, so if you have Windows you don't have to worry about it. If you are Mac user, instead, you can download it for free from the Mac App Store.  
 	![](images/01.png)
 
 
-## <a name="sign-up-neo"></a>Sign up for SAP Cloud Platform Neo trial account
-You need Neo trial SAP Cloud Platform to complete some of the hands-on exercises.
+## <a name="sign-up-trial"></a>Sign up for SAP Cloud Platform Trial account
+You need a SAP Cloud Platform trial account to complete many of the hands-on exercises.
 
-1.	Sign up for SAP Cloud Platform trial account from <https://account.hanatrial.ondemand.com/>  
-	![](images/11.png)
+1. Sign up for SAP Cloud Platform trial account from <https://account.hanatrial.ondemand.com/>  
+	 ![](images/11.png)
 
-	> NOTE: If you don’t have an account on SAP Cloud Platform yet, go to the Sign up for a free trial account tutorial, and then come back to this step.
+1. After you have logged in you might want to bookmark the main Trial homepage. Then, click on **Neo Trial**  
+	 ![](images/12.png)
 
-1. After you have logged in, click on **Home**.  Then, click on **Neo Trial**  
-	![](images/12.png)
+1. This will take you to the **Overview** page of the SAP Cloud Platform Cockpit for Neo  
+	 ![](images/13.png)
 
-1. This will take you to the **Overview** page of the SAP Cloud Platform Cockpit for Neo stack  
-	![](images/13.png)
+1. Click on Services. Ensure the service **SAP Web IDE Full-Stack** is enabled. You can search on *full* to find it more easily.
+	 ![](images/14.png)
 
-1.	From SAP Cloud Platform Cockpit, click on Services. Ensure the following service is enabled	 
-	- SAP Web IDE Full-Stack
+1. Click on the **SAP Web IDE Full-Stack** tile, scroll down and click on *Go to Service*. SAP Web IDE Full-Stack will launch - once finished you might want to bookmark it.
+ 	 ![](images/15.png)
 
-	![](images/14.png)
+1. From SAP Cloud Platform Cockpit, click on **Home**.
+	 ![](images/16.png)
 
-
-## <a name="sign-up-cf"></a>Sign up for SAP Cloud Platform Cloud Foundry trial account
-Sign up also for SAP Cloud Platform Cloud Foundry trial account.
-
-1.	From SAP Cloud Platform Cockpit, click on Home.  Then, click on **Cloud Foundry Trial**. Select **Region** *Europe (Frankfurt)* and press **OK**  
-	![](images/15.png)
-1.	Select the Global account that matches your login. Next, select the trial sub-account  
-	![](images/16.png)	 
+1. Then, click on **Cloud Foundry Trial**. Select **Region** *Europe (Frankfurt) AWS* and press **OK**. Your Cloud Foundry Trial will be provisioned.  
+	 ![](images/17.png)
 
 
 ## <a name="install-cf-cli"></a>Install Cloud Foundry CLI
@@ -94,38 +90,47 @@ Cloud Foundry CLI is the official command line client for Cloud Foundry. It prov
 The SAP Cloud Platform Cloud Foundry Plugins are used to extend the Cloud Foundry CLI with additional commands. The MTA Plugin performs operations on multi-target applications (MTAs) such as deploying, removing, viewing, etc.  
 
 1.	The MTA Plugin can be downloaded here <https://tools.hana.ondemand.com/#cloud>. Scroll down to the **Plugins** section and download MTA plugin which matches your Workstation's Operating System
+	![](images/19a.png)
 
 1. Once the file has been downloaded, please install by issuing the following command from a command prompt in the folder where you downloaded the file: **cf install-plugin -f \<downloaded-filename\>** where the name of the downloaded file replaces **\<downloaded-filename\>**.
-
+	![](images/19b.png)
 
 ## <a name="install-ml-cli"></a>Install Machine Learning Foundation CLI
 SAP Leonardo Machine Learning foundation Command Line Interface (CLI) is a way of interacting with the foundation and using its services, e.g. to simplify data upload for Retraining and Bring your Own Model scenarios as described in the official documentation.
 
 1.	Machine Learning Foundation CLI can be downloaded here <https://tools.hana.ondemand.com/#mlfoundation>. Just select the installer which matches your Workstation's Operating System
-	![](images/19_02.png)
+	![](images/19c.png)
 
 1. Once the file has been downloaded, please extract the file and install by issuing the following command from a command prompt in the folder where you extracted the file: **cf install-plugin -f \<extracted-filename\>** where the name of the extracted file replaces **\<extracted-filename\>**.
+	![](images/19d.png)
 
 
 ## <a name="install-minio-client"></a>Install Minio Client
 
-1. Follow instructions on <https://docs.minio.io/docs/minio-client-quickstart-guide.html> to install the client for your operating system.
+1. Follow instructions on <https://docs.minio.io/docs/minio-client-quickstart-guide.html> to download the client for your operating system.
+   ![](images/50.png)
 
+1. Move the downloaded *mc* executable in a folder such as *C:\Student\Minio* and copy this location
 
-## <a name="install-java-jre"></a>Install Java JRE
+   ![](images/51.png)
 
-1.	Download and install Java JRE from this link <https://www.java.com/en/>  
-	![](images/05.png)
+1. To add Minio to your *PATH* on Windows, open **Advanced System Settings**
 
-1.	Ensure you download and install the 64 bit version  
-	![](images/05b.png)
-	![](images/05c.png)
+	 ![](images/36.png)
 
+1.	Click on the **Environment Variables...** button
 
-## <a name="install-paho-client"></a>Install Paho Client
+	 ![](images/37.png)
 
-1.	Download and install Paho Client from this link <https://help.sap.com/viewer/e9e5e6a2fa144c31b5b5d5c144047dec/Cloud/en-US>  
-	![](images/01b.png)
+1.	Edit **PATH** in the System Variables area.
+
+	 ![](images/38.png)
+
+1.	Paste a new value that corresponds to the folder where Minio has been installed.
+
+	 ![](images/52.png)
+
+1.  Save all changes.
 
 
 ## <a name="postman"></a> Install Chrome Postman application
@@ -143,6 +148,35 @@ Another required tool is the Postman Interceptor extension for Chrome. This can 
 
 1. Click **Add to Chrome**  
 	![](images/27.png)
+
+
+## <a name="install-java-jre"></a>Install Java JRE
+
+1.	Download and install Java JRE from this link <https://www.java.com/en/>  
+	![](images/05.png)
+
+1.	Ensure you download and install the 64 bit version  
+	![](images/05b.png)
+	![](images/05c.png)
+
+
+## <a name="install-paho-client"></a>Install Paho Client
+
+1.	Download the Paho Client from this link <https://help.sap.com/viewer/e9e5e6a2fa144c31b5b5d5c144047dec/Cloud/en-US>. Ensure you download the 64 bit version. Extract the downloaded zip file to *C:\Student\PahoClient*
+	![](images/01b.png)
+
+
+## <a name="install-iot-services-edge"></a>Install IoT Services Edge 4.0
+
+1. Download **IoT Services Edge 4.0** from the SAP software download center <https://launchpad.support.sap.com/#/softwarecenter>. Search on *iot services edge* to find the Maintenance Software Component more easily. If you don't have access to SWDC don't worry as remote windows desktops with all of prerequisites already installed will be available for use during the workshop.
+	![](images/40.png)
+
+1. Extract the downloaded zip file.
+
+	![](images/41.png)
+
+1. Extract the zip file **gateway-4.xx.0.zip** that you'll find in the newly extracted folder to *C:\Student\IotGateway*.
+  ![](images/42.png)
 
 
 ## <a name="install-python"></a>Install Python
@@ -163,21 +197,27 @@ Another required tool is the Postman Interceptor extension for Chrome. This can 
 	![](images/33.png)
 
 1.	Download the **Complete package, except sources** then double click on the downloaded file.
+
 	![](images/34.png)
 
-1.	Note which folder OpenSSL will be installed into.
+1.	Note which folder OpenSSL will be installed into (you can copy it).
+
 	![](images/35.png)
 
 1.	Open **Advanced System Settings** for Windows
+
 	![](images/36.png)
 
 1.	Click on the **Environment Variables...** button
+
 	![](images/37.png)
 
 1.	Edit **PATH** in the System Variables area.
+
 	![](images/38.png)
 
-1.	Add a new value that corresponds to where OpenSSL has been installed (be sure to include \bin at the end).
+1.	Paste a new value that corresponds to the folder where OpenSSL has been installed and be sure to add \bin at the end.
+
 	![](images/39.png)
 
 1.  Save all changes.
