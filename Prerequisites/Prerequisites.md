@@ -66,7 +66,7 @@ You need Neo trial SAP Cloud Platform to complete some of the hands-on exercises
 1. This will take you to the **Overview** page of the SAP Cloud Platform Cockpit for Neo stack  
 	![](images/13.png)
 
-1.	From SAP Cloud Platform Cockpit, click on Services. Enable the following services	 
+1.	From SAP Cloud Platform Cockpit, click on Services. Ensure the following service is enabled	 
 	- SAP Web IDE Full-Stack
 
 	![](images/14.png)
@@ -79,8 +79,6 @@ Sign up also for SAP Cloud Platform Cloud Foundry trial account.
 	![](images/15.png)
 1.	Select the Global account that matches your login. Next, select the trial sub-account  
 	![](images/16.png)	 
-1.	Make sure you have **2GB Memory** for the space.  If you don’t have 2GB Memory, please register a new account.  
-	![](images/17.png)
 
 
 ## <a name="install-cf-cli"></a>Install Cloud Foundry CLI
@@ -89,7 +87,7 @@ Cloud Foundry CLI is the official command line client for Cloud Foundry. It prov
 1.	Cloud Foundry CLI can be downloaded here <https://github.com/cloudfoundry/cli#downloads>. Just select the installer which matches your Workstation's Operating System
 	![](images/19.png)
 
-1. Once the file has been downloaded, please install it by double clicking on the downloaded file.
+1. Once the file has been downloaded, please extract it then install by double clicking on the extracted file.
 
 
 ## <a name="install-mta-cli"></a>Install MTA Plugin
@@ -97,7 +95,7 @@ The SAP Cloud Platform Cloud Foundry Plugins are used to extend the Cloud Foundr
 
 1.	The MTA Plugin can be downloaded here <https://tools.hana.ondemand.com/#cloud>. Scroll down to the **Plugins** section and download MTA plugin which matches your Workstation's Operating System
 
-1. Once the file has been downloaded, please install by issuing the following command from a command prompt in the folder where you downloaded the file: **cf install-plugin \<downloaded-filename\>** where the name of the downloaded file replaces **\<downloaded-filename\>**.
+1. Once the file has been downloaded, please install by issuing the following command from a command prompt in the folder where you downloaded the file: **cf install-plugin -f \<downloaded-filename\>** where the name of the downloaded file replaces **\<downloaded-filename\>**.
 
 
 ## <a name="install-ml-cli"></a>Install Machine Learning Foundation CLI
@@ -106,7 +104,7 @@ SAP Leonardo Machine Learning foundation Command Line Interface (CLI) is a way o
 1.	Machine Learning Foundation CLI can be downloaded here <https://tools.hana.ondemand.com/#mlfoundation>. Just select the installer which matches your Workstation's Operating System
 	![](images/19_02.png)
 
-1. Once you have downloaded the file, please install it following the instructions contained in the same page
+1. Once the file has been downloaded, please extract the file and install by issuing the following command from a command prompt in the folder where you extracted the file: **cf install-plugin -f \<extracted-filename\>** where the name of the extracted file replaces **\<extracted-filename\>**.
 
 
 ## <a name="install-minio-client"></a>Install Minio Client
@@ -119,14 +117,15 @@ SAP Leonardo Machine Learning foundation Command Line Interface (CLI) is a way o
 1.	Download and install Java JRE from this link <https://www.java.com/en/>  
 	![](images/05.png)
 
+1.	Ensure you download and install the 64 bit version  
+	![](images/05b.png)
+	![](images/05c.png)
+
 
 ## <a name="install-paho-client"></a>Install Paho Client
 
 1.	Download and install Paho Client from this link <https://help.sap.com/viewer/e9e5e6a2fa144c31b5b5d5c144047dec/Cloud/en-US>  
-	*Note: Paho Client will not work on Mac environment.*
-
 	![](images/01b.png)
-
 
 
 ## <a name="postman"></a> Install Chrome Postman application
