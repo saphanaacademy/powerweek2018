@@ -73,8 +73,32 @@ You need a SAP Cloud Platform trial account to complete many of the hands-on exe
 1. From SAP Cloud Platform Cockpit, click on **Home**.
 	 ![](images/16.png)
 
-1. Then, click on **Cloud Foundry Trial**. Select **Region** *Europe (Frankfurt) AWS* and press **OK**. Your Cloud Foundry Trial will be provisioned.  
+1. Then, click on **Cloud Foundry Trial**.
+
 	 ![](images/17.png)
+
+1. Select **Region** *Europe (Frankfurt) AWS* and press **OK**. This is the only region where SAP Leonardo Machine Learning Foundation is  available as a trial. Your Cloud Foundry Trial will be provisioned.  
+ 	 ![](images/18.png)
+
+1. Once provisioning is complete click on **Go to Space**.
+
+ 	 ![](images/18b.png)
+
+1. Go to the *Subaccounts* page then click on **Entitlements**.
+ 	 ![](images/18c.png)
+
+1. Verify whether two **Application Runtime** MEMORY units have been assigned to the *trial* subaccount.
+   ![](images/18d.png)
+
+1. If not, scroll up, then click on **Edit**.
+
+   ![](images/18e.png)
+
+1. Scroll down again and use the *+* to assign two MEMORY units to the *trial* subaccount.
+	 ![](images/18f.png)
+
+1. Then scroll back up and click on **Save**.
+	 ![](images/18g.png)
 
 
 ## <a name="install-cf-cli"></a>Install Cloud Foundry CLI
