@@ -6,7 +6,7 @@ SAP Leonardo Technologies Power Week 2018. These are the technical hands-on work
 
 - [Prerequisites for the exercises](Prerequisites/Prerequisites.md)
 
-# INDEX OF EXERCISES 
+# INDEX OF EXERCISES
 
 ### Leonardo Internet of Things Foundation
 
@@ -25,4 +25,5 @@ SAP Leonardo Technologies Power Week 2018. These are the technical hands-on work
 
 ### Appendix
 
+- [Video Tutorials](https://www.youtube.com/playlist?list=PLkzo92owKnVzADKzttSOh3MzhockVPpmH)
 - [Useful Links and Information](Appendix/useful_info.md)
