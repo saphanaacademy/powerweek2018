@@ -155,9 +155,10 @@ In this section, you will push an application that we have already prepared for 
 	| %APP\_NAME% | the name you want to give to the Cloud Foundry application (i.e. mlapp) |
 	| %APP\_HOST% | the unique host name you want to give to the Cloud Foundry application (use your Cloud Foundry trial org and space followed by your app name i.e %org%-%space%-mlapp HINT: use the **cf t** command to see your org and space) |
 	| %SERVICE\_INSTANCE\_NAME% | the name of ML Foundation instance you have created in the first exercises (i.e. ml) |
-	| %MODEL\_NAME% |the name of the model you have just deployed (i.e. byom-mnist) |
+	| %MODEL\_NAME% | the name of the model you have just deployed (i.e. byom-mnist) |
+	| memory | set the value to 256M |
 
-	Once done, save and close the file  
+	Once done, save the file  
 
 	![](images/16.png)
 
