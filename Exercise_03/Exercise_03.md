@@ -36,7 +36,7 @@ The goal of this exercise is to use IoT to extend LoB.
 
 ## Prerequisites
 
-Here below are prerequisites for this exercise.
+Here below are prerequisites for this exercise. 
 
 * A trial account on the SAP Cloud Platform. You can get one by registering here <https://account.hanatrial.ondemand.com>
 * An SAP IoT Service system (provided by your instructor)
