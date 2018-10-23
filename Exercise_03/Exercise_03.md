@@ -312,8 +312,16 @@ This section explains various ways we can consume and visualize the measurements
 
 1. Congratulations! You have successfully consumed and analyzed sensor data.
 
-## Video Demo
-### <a name="workflow"></a> Refer to Instructor Demo / View for the rest of Exercise 3
+## Maintenance Scenario Video Demo
+### <a name="workflow"></a> Refer to Instructor Demo / Video for the rest of Exercise 3
+
+The rest of the steps for the exercise are covered in the following 2 videos.
+
+[https://www.youtube.com/watch?v=R111BuaMxM0&list=PLkzo92owKnVzADKzttSOh3MzhockVPpmH&t=0s&index=6]()
+
+.. and ..
+
+[https://www.youtube.com/watch?v=0kvaUTPMugQ&list=PLkzo92owKnVzADKzttSOh3MzhockVPpmH&t=0s&index=7]()
 
 ### <a name="workflow"></a> SAP Cloud Platform Workflow
 SAP Cloud Platform Workflow Service enables customers and partners to extend their core business process executed in S/4 HANA, Ariba, Concur, SuccessFactors, C4C and other 3rd Party applications. These extension applications enable customers to adopt changes in business very rapidly in an agile and non-disruptive way. Workflow Service enables business users to use SAP My Inbox, a FIORI based application to manage their tasks.  It offers out of the box FIORI based monitoring applications to keep track of the deployed workflows and workflow instances operated in the system.
