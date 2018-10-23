@@ -27,7 +27,7 @@ The goal of this exercise is to have a quick introduction on IoT Application Ena
 
 ## Prerequisites
   
-Here below are prerequisites for this exercise.
+Here below are prerequisites for this exercise. 
 
 * Chrome browser
 * SAP IoT Application Enablement system (provided by your instructor)
