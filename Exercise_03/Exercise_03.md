@@ -5,11 +5,14 @@
 
 
 ## Description
-This document provides you with the exercises for the hands-on session on SAP Cloud Platform Integration, Business Rules, Workflow and IoT. This scenario will help you to go through the following activities:
+This document provides you with the exercises for the hands-on session on SAP Cloud Platform Integration, Business Rules, Workflow and IoT. The first part of the scenario will help you to go through the following activities:
 
 * Creating Device Data Model from IoT API Docs and IoT Cockpit
 * Device onboarding with IoT Gateway Cloud using REST protocol
 * Sending data with REST Client
+
+You will then see a Instructor / Video demo of the following :
+
 * Working with SAP Cloud Platform Workflow service
 * Working with SAP Cloud Platform Business Rules service
 * Working with SAP Cloud Platform Integration, Importing and Configuring Integration Content
@@ -61,7 +64,7 @@ Here below are prerequisites for this exercise.
 The SAP Cloud Platform Internet of Things Service enables customers and partners to develop, customize, and operate IoT business applications in the cloud. IoT Services provides Lifecycle management at scale for IoT devices from onboarding to decommissioning. It also provides a way to securely connect to remote devices over a broad variety of IoT protocols. It provides gateway Edge which provides one-premise IoT edge processing and also gateway cloud which does centralized cloud based processing.
 
 The IoT cockpit is the user interface of the solution and provides access to various functions. It is the main interface for users to interact with the Internet of Things core service. It can be used creating user & tenants. Creating device data model, Device Onboarding and adding new networks etc. it can also be used to deploy interceptors, retrieve network logs, visualize the data which is being ingested via IoT devices/sensors.  
-	![](images/000.png)	
+	![](images/000.png)
 
 ### <a name="device-onboarding"></a> Device onboarding
 Each device exchanges data with a specific protocol (for example: REST in this exercise).  Each device corresponds to 1 unique physical node. We need to create physical node that corresponds to a physical device. In the following section, it is described how to create a Device for the REST network.
@@ -175,13 +178,14 @@ Each device exchanges data with a specific protocol (for example: REST in this e
 1. As a side note, if you need to know where you downloaded the certificate, you can click on the small down arrow on the Chrome status bar and click on **Show in Finder** for MAC users or **Show in Explorer** for Windows users  
 	![](images/025.png)
 
+	![](images/026.png)
+
 1. Congratulations! You have successfully on-boarded a new device and a new sensor.
 
 
-### <a name="install-certificate"></a> Install the certificate
-At this point we need in some way to install the certificate we have downloaded in your system so that it can be used by a REST client like POSTMAN, to post sensor data and also to read the posted sensor data. We are going to illustrate here two distinct procedures for installing this certificate, one for Windows and another for MAC.
 
-#### --- Windows Users ---
+### <a name="install-certificate"></a> Install the certificate
+At this point we need in some way to install the certificate we have downloaded in your system so that it can be used by a REST client like POSTMAN, to post sensor data and also to read the posted sensor data. 
 
 1. Open Chrome browser and go to <chrome://settings> and Search for SSL in search text field: you get **Manage HTTPS/SSL certificates and settings**. Click on this link
 	![](images/027.png)
@@ -210,36 +214,6 @@ At this point we need in some way to install the certificate we have downloaded 
 
 1.	You should receive the information that the import was successful.  
 	![](images/036.png)
-
-
-#### --- MAC Users ---
-
-1. Open the **Keychain** utility and select **File -> Import Items...**  
-	![](images/037.png)
-
-1. Locate the p12 certificate you downloaded earlier  
-	![](images/038.png)
-
-1. Enter your MAC credentials if required  
-	![](images/039.png)
-
-1. Enter the **secret key** you obtained while downloading the certificate and noted down in a text editor; then click **OK**  
-	![](images/040.png)
-
-1. The certificate is imported, but it's not yet trusted. You can see a message saying that this certificate was signed by an unknown authority. Double click on the certificate  
-	![](images/041.png)
-
-1. In the **Trust** section choose **Always Trust** for the parameter "When using this certificate"  
-	![](images/042.png)
-
-1. Enter your MAC credentials if required and click **Update Settings**  
-	![](images/043.png)
-
-1. The certificate is now successfully imported and trusted  
-	![](images/044.png)
-
-
-
 
 ### <a name="sending-messages"></a> Sending messages via REST using Postman
 
@@ -338,11 +312,8 @@ This section explains various ways we can consume and visualize the measurements
 
 1. Congratulations! You have successfully consumed and analyzed sensor data.
 
-### <a name="Bogota_s"></a> -------------------------------------------------------------------------------
-### <a name="Bogota_s"></a> -------------------------------------------------------------------------------
-### <a name="Bogota"></a> - PowerWeek Bogota Students : Stop here as rest of exercise will be demo'ed. -
-### <a name="Bogota_s"></a> -------------------------------------------------------------------------------
-### <a name="Bogota_s"></a> -------------------------------------------------------------------------------
+## Video Demo
+### <a name="workflow"></a> Refer to Instructor Demo / View for the rest of Exercise 3
 
 ### <a name="workflow"></a> SAP Cloud Platform Workflow
 SAP Cloud Platform Workflow Service enables customers and partners to extend their core business process executed in S/4 HANA, Ariba, Concur, SuccessFactors, C4C and other 3rd Party applications. These extension applications enable customers to adopt changes in business very rapidly in an agile and non-disruptive way. Workflow Service enables business users to use SAP My Inbox, a FIORI based application to manage their tasks.  It offers out of the box FIORI based monitoring applications to keep track of the deployed workflows and workflow instances operated in the system.
