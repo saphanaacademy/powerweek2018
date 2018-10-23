@@ -340,7 +340,7 @@ We can now connect the Thing with the created device.
 1. First set the **Device ID** by clicking on the drop down menu  
 	![](images/054.png)
 
-1. Enter **gh\_cli** to filter the device list and select the device **gh\_climate\_device\ex4_\_xx** you created previously (**xx** is your workstation ID). Make sure that the Device ID matches the Device you have created in this exercise  
+1. Enter **gh\_cli** to filter the device list and select the device **gh\_climate\_device\_ex4\_xx** you created previously (**xx** is your workstation ID). Make sure that the Device ID matches the Device you have created in this exercise  
 	![](images/055.png)
 
 1. Then select the **Sensor**  
