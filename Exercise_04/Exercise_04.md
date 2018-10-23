@@ -549,8 +549,7 @@ Before we can send some data to the device we need to establish a connection wit
 1. Go to your IoT Service cockpit and login with your credentials  
 	![](images/108.png)
 
-1. Select **Devices** on the left, seacrh by Name, type "gh_*" in the search box and select your device **gh\_climate\_device\_xx** (where **xx** is your workstation ID)  
-	![](images/109.png)
+1. Select **Devices** on the left, seacrh by Name, type "gh_*" in the search box and select your device **gh\_climate\_device\_ex4\_xx** (where **xx** is your workstation ID)  
 
 1. Select the **Certificate** tab and click on **Generate Certificate**  
 	![](images/110.png)
