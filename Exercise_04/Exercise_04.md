@@ -102,9 +102,11 @@ The Thing that we will create later, in order to work properly, needs to be atta
 	| --------- | ----- |
 	| Name | gh\_climate\_device\_xx (remember to replace **xx** with your workstation ID)|
 	| Gateway | REST Network |
+	
 	![](images/049.png)
 
 1. Select the **Sensors** tab and click on the **+** sign to add a new sensor  
+
 	![](images/050.png)
 
 1. Enter the following properties and click on **Add**
@@ -114,6 +116,7 @@ The Thing that we will create later, in order to work properly, needs to be atta
 	| Name | gh\_climate\_sensor\_xx |
 	| Sensor Type | gh\_climate\_sensor\_typ\_xx |
 	(remember to replace **xx** with your workstation ID)
+
 	![](images/051.png)
 
 1. Your device has been successfully created.  
