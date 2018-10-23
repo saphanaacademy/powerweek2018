@@ -90,7 +90,7 @@ The Thing that we will create later, in order to work properly, needs to be atta
 1. Select the **Sensor Types** item in the left-hand menu and click on the **+** sign to create a new sensor type  
 	![](images/046.png)
 
-1. Enter **gh\_climate\_sensor\_typ\_xx** for the **Name** (remember to replace **xx** with your workstation ID), select the **gh\_climate\_ps\_xx** capability you have created earlier and set **measure** as its Type. Then click on **Create**  
+1. Enter **gh\_climate\_sensor\_typ\_ex4\_xx** for the **Name** (remember to replace **xx** with your workstation ID), select the **gh\_climate\_ps\_xx** capability you have created earlier and set **measure** as its Type. Then click on **Create**  
 	![](images/047.png)
 
 1. On the left-hand menu, select **Devices** and click again on the **+** sign to create a new Device  
@@ -100,7 +100,7 @@ The Thing that we will create later, in order to work properly, needs to be atta
 
 	| Parameter| Value |
 	| --------- | ----- |
-	| Name | gh\_climate\_device\_xx (remember to replace **xx** with your workstation ID)|
+	| Name | gh\_climate\_device\_ex4\_xx (remember to replace **xx** with your workstation ID)|
 	| Gateway | REST Network |
 	
 	![](images/049.png)
@@ -113,8 +113,8 @@ The Thing that we will create later, in order to work properly, needs to be atta
 
 	| Parameter| Value |
 	| --------- | ----- |
-	| Name | gh\_climate\_sensor\_xx |
-	| Sensor Type | gh\_climate\_sensor\_typ\_xx |
+	| Name | gh\_climate\_sensor\_ex4\_xx |
+	| Sensor Type | gh\_climate\_sensor\_typ\_ex4\_xx |
 	(remember to replace **xx** with your workstation ID)
 
 	![](images/051.png)
