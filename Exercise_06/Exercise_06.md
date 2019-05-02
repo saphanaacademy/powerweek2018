@@ -124,7 +124,7 @@ In this exercise you will learn how to quickly integrate in a SAPUI5 application
 	|Name|sapui5ml-api|
 	|Type|HTTP|
 	|Description|SAP Leonardo Machine Learning APIs|
-	|URL|https://sandbox.api.sap.com/ml|
+	|URL|https://sandbox.api.sap.com/mlfs/api/v2|
 	|Proxy Type|Internet|
 	|Authentication|NoAuthentication|
 

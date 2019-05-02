@@ -115,7 +115,7 @@ For the upcoming exercises you will need an **OAuth2** token to access the ML Fo
 1. Change the URL to your trial URL for image classification as defined in your Service Key item **IMAGE_CLASSIFICATION_URL** after removing **/image/classification** from the end, then press **Save**
 	![](images/26.png)
 
-1. Open SAP Web IDE Full-Stack as used in the previous exercise and for the **MLFSAPUI5_Project_Exercise** project edit **settings.json**. Change the **url** item to **/ml/image/classification**. Then in the *headers* section replace **APIKey** with **Authorization** and paste in your access token as value prefixed by **Bearer** and a space. Finally, **Save** the file
+1. Open SAP Web IDE Full-Stack as used in the previous exercise and for the **MLFSAPUI5_Project_Exercise** project edit **settings.json**. In the *headers* section replace **APIKey** with **Authorization** and paste in your access token as value prefixed by **Bearer** and a space. Finally, **Save** the file
 	![](images/27.png)
 
 1. Run the application and test as previously. All should be working OK except that this time it's using your trial ML service rather than the sandbox service from SAP API Business Hub.
