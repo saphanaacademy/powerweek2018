@@ -27,7 +27,7 @@ The goal of this exercise is to have a quick introduction on IoT Application Ena
 
 ## Prerequisites
   
-Here below are prerequisites for this exercise.
+Here below are prerequisites for this exercise. 
 
 * Chrome browser
 * SAP IoT Application Enablement system (provided by your instructor)
@@ -90,7 +90,7 @@ The Thing that we will create later, in order to work properly, needs to be atta
 1. Select the **Sensor Types** item in the left-hand menu and click on the **+** sign to create a new sensor type  
 	![](images/046.png)
 
-1. Enter **gh\_climate\_sensor\_typ\_xx** for the **Name** (remember to replace **xx** with your workstation ID), select the **gh\_climate\_ps\_xx** capability you have created earlier and set **measure** as its Type. Then click on **Create**  
+1. Enter **gh\_climate\_sensor\_typ\_ex4\_xx** for the **Name** (remember to replace **xx** with your workstation ID), select the **gh\_climate\_ps\_xx** capability you have created earlier and set **measure** as its Type. Then click on **Create**  
 	![](images/047.png)
 
 1. On the left-hand menu, select **Devices** and click again on the **+** sign to create a new Device  
@@ -100,20 +100,23 @@ The Thing that we will create later, in order to work properly, needs to be atta
 
 	| Parameter| Value |
 	| --------- | ----- |
-	| Name | gh\_climate\_device\_xx (remember to replace **xx** with your workstation ID)|
+	| Name | gh\_climate\_device\_ex4\_xx (remember to replace **xx** with your workstation ID)|
 	| Gateway | REST Network |
+	
 	![](images/049.png)
 
 1. Select the **Sensors** tab and click on the **+** sign to add a new sensor  
+
 	![](images/050.png)
 
 1. Enter the following properties and click on **Add**
 
 	| Parameter| Value |
 	| --------- | ----- |
-	| Name | gh\_climate\_sensor\_xx |
-	| Sensor Type | gh\_climate\_sensor\_typ\_xx |
+	| Name | gh\_climate\_sensor\_ex4\_xx |
+	| Sensor Type | gh\_climate\_sensor\_typ\_ex4\_xx |
 	(remember to replace **xx** with your workstation ID)
+
 	![](images/051.png)
 
 1. Your device has been successfully created.  
@@ -337,7 +340,7 @@ We can now connect the Thing with the created device.
 1. First set the **Device ID** by clicking on the drop down menu  
 	![](images/054.png)
 
-1. Enter **gh\_cli** to filter the device list and select the device **gh\_climate\_device\_xx** you created previously (**xx** is your workstation ID). Make sure that the Device ID matches the Device you have created in this exercise  
+1. Enter **gh\_cli** to filter the device list and select the device **gh\_climate\_device\_ex4\_xx** you created previously (**xx** is your workstation ID). Make sure that the Device ID matches the Device you have created in this exercise  
 	![](images/055.png)
 
 1. Then select the **Sensor**  
@@ -546,8 +549,7 @@ Before we can send some data to the device we need to establish a connection wit
 1. Go to your IoT Service cockpit and login with your credentials  
 	![](images/108.png)
 
-1. Select **Devices** on the left, seacrh by Name, type "gh_*" in the search box and select your device **gh\_climate\_device\_xx** (where **xx** is your workstation ID)  
-	![](images/109.png)
+1. Select **Devices** on the left, seacrh by Name, type "gh_*" in the search box and select your device **gh\_climate\_device\_ex4\_xx** (where **xx** is your workstation ID)  
 
 1. Select the **Certificate** tab and click on **Generate Certificate**  
 	![](images/110.png)
