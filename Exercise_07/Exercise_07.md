@@ -57,7 +57,7 @@ You used your SAP Cloud Platform trial account to access the SAP API Business Hu
 ### <a name="service-instance-key"></a> Create Service Instance and Service Key for ML Foundation
 Before we continue we need to create a service instance and get a service key from the ML Foundation service. A service key enables the ML Foundation Service to be used outside the CF environment. In this exercise, you need to create such a key to be used by an external application like Swagger UI or Postman. The service key contains all the URLs and credentials (clientid and clientsecret) required for you to access the ML Foundation service running for your trial account.
 
-1.	Within your space navigate to **Services -> Service Marketplace**, then click on the **ml-foundation-trial-beta** tile  
+1.	Within your space navigate to **Services -> Service Marketplace**, then click on the **SAP Leonardo Machine Learning Foundation** **ml-foundation-trial-beta** tile  
 	![](images/08.png)
 
 1.	Select Instances on the left menu bar and click on **New Instance**  
@@ -93,7 +93,7 @@ Before we continue we need to create a service instance and get a service key fr
 ### <a name="access-token"></a> Generate Access Token
 For the upcoming exercises you will need an **OAuth2** token to access the ML Foundation services in your Cloud Foundry environment.
 
-1. You can obtain the access token using Postman. Open a new tab in **Chrome** and open **Postman** from the **Apps** menu
+1. You can obtain the access token using **Postman**
 	![](images/21.png)
 
 1. Go back to **Chrome** and *copy* the service key **url** and paste it into **Postman** and add the following path to the end of the URL: **/oauth/token?grant\_type=client\_credentials**

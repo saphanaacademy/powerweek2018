@@ -59,7 +59,7 @@ In this exercise, you will learn how to retrain the image classification service
 	cf -v
 	```
 
-	You should get a version equal or greater to the one showed in the picture. If not, you need to install the latest CF CLI as explained in the prerequisites to this workshop  
+	You should get a version equal or greater to the one showed in the picture. If not, you need to install it via [here](https://github.com/cloudfoundry/cli#downloads)
 	![](images/40.png)
 
 1. Now, login to SAP Cloud Platform cloud foundry environment with the command
@@ -84,7 +84,7 @@ In this exercise, you will learn how to retrain the image classification service
 	You can copy this service key somewhere for your ease and comfort (e.g. Notepad++) because it will be needed later in the exercise  
 	![](images/43.png)
 
-1. Let's check that the Cloud Foundry SAPML Plugin is installed. Details on how to install the SAPML CLI plugin are in the prerequisites to this workshop. Run the following command to get the list of all the installed plugins. You should see that SAPML is already installed  
+1. Let's check that the Cloud Foundry SAPML Plugin is installed. Run the following command to get the list of all the installed plugins. You should see that SAPML is already installed. If not you can install it from [here](https://tools.hana.ondemand.com/#mlfoundation) by downloading, extracting, then issuing the **cf install-plugin -f sapmlcli.exe** command on Windows or **cf install-plugin -f sapmlcli** on MacOS/Linux 
 
 	```
 	cf plugins
@@ -137,7 +137,7 @@ In this exercise, you will learn how to retrain the image classification service
 	```
 	![](images/50b.png)
 
-1. Using Minio client (details on how to install Minio client are in the prerequisites to this workshop) configure the remote host using the commands below (you need to take the missing values in the "<>" brackets from the filesystem configuration)
+1. Using **MinIO client** configure the remote host using the commands below (you need to take the missing values in the "<>" brackets from the filesystem configuration). If you don't already have **MinIO Client** you can get it [here](https://min.io/download)
 
 	```
 	mc config host add saps3 https://<Endpoint> <Access key> <Secret key>
@@ -279,7 +279,7 @@ In order to test the retrained model you need to open the SAPUI5 application you
 ### <a name="test-retrained-model-postman"></a> Test the retrained model with Postman
 It's also possible to perform inference via Postman - this way you can understand the exact API calls that are necessary
 
-1. Open a new tab in **Chrome** and open **Postman** from the **Apps** menu and open a new tab
+1. Launch **Postman** and open a new tab
 	![](images/30.png)
 
 1. Set the method to **POST** and paste in your service key **IMAGE_CLASSIFICATION_URL** as request url (HINT: you can use the cf service-key command or the Cloud Foundry cockpit to view your service key)

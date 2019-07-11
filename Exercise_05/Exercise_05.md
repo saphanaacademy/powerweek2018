@@ -41,7 +41,7 @@ Here below are prerequisites for this exercise.
 1. Open SAP Business Hub in your browser <https://api.sap.com>
 	![](images/01.png)
 
-1. 	Search on **leonardo func**  
+1. 	Search on **leonardo machine**  
 	![](images/02.png)
 
 1. 	Choose the API Package **SAP Leonardo Machine Learning - Functional Services** then search on **topic**  
@@ -62,7 +62,7 @@ Here below are prerequisites for this exercise.
 1. Under **files** press the **Choose File** button  
 	![](images/08.png)
 
-1. Choose the *Topic_Detection.zip* file (you have already downloaded it in the prerequisites section) containing some text files  
+1. Choose the *[Topic_Detection.zip](files/Topic_Detection.zip?raw=true)* file (you should have already downloaded it in the prerequisites section) containing some text files  
 	![](images/09.png)
 
 1. Scroll down and under **options**, paste the following parameters then click on the **Execute** button  
@@ -86,13 +86,13 @@ Here below are prerequisites for this exercise.
 
 ### <a name="image-classification"></a> Use SAP Leonardo ML Image Classification on API Business Hub
 
-1. Go back to the **SAP API Business Hub** page, search on **leonardo func**, choose the API Package **SAP Leonardo Machine Learning - Functional Services**, then search on **image class** and select **Inference Service for Customizable Image Classification**  
+1. Go back to the **SAP API Business Hub** page, search on **leonardo machine**, choose the API Package **SAP Leonardo Machine Learning - Functional Services**, then search on **image class** and select **Inference Service for Customizable Image Classification**  
 	![](images/14.png)
 
 1. For **POST** request **/classification** click on **Try out** then scroll down and click the **Choose File** button
 	![](images/15.png)
 
-1. Choose the *test_images.zip* file (you have already downloaded it in the prerequisites section) and press the **Execute** button  
+1. Choose the *[test_images.zip](files/test_images.zip?raw=true)* file (you should have already downloaded it in the prerequisites section) and press the **Execute** button  
 	![](images/16.png)
 
 1. Look at the response code: it should be 200, meaning that the request was successful. Then look at the *Response body* - you should be able to read the predictions against the images contained in the zip file you uploaded. For example here you can see that the *iPhoneX.jpg* has been labeled as a *cellular telephone* with a score of *0.47*  
@@ -106,7 +106,7 @@ Here below are prerequisites for this exercise.
 
 ### <a name="image-classification-postman"></a> Use SAP Leonardo ML Image Classification on API Business Hub from Postman
 
-1. Open a new tab in **Chrome** and open **Postman** from the **Apps** menu
+1. Open **Postman** - you can install it from [GetPostman.com](https://GetPostman.com) if you don't have it already
 	![](images/19.png)
 
 1. Go back to **Chrome** and *copy* the **Request URL** for image classification
