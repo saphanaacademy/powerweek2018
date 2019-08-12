@@ -71,7 +71,7 @@ In this exercise, we will look at SAP Enterprise Messaging services to create as
 
 For this exercise we will go ahead and use the SCP Trial account available to us. If you have not estblished a Trial Account for SAP Cloud Platform, please follow the steps in Step 1a.  If you have a Trial available already, please skip to the Step 1b section and Log On.
 
-#####Step 1a - Register for a Trial New Cloud Account
+##### Step 1a - Register for a Trial New Cloud Account
 1.  If you do *not* already have an account in SCP, please visit the SAP Cloud Platform portal <https://cloudplatform.sap.com/try.html> and click on the "**Sign up for your free account**" link
 2.  Fill in the information on the form, check the box that you have read the Terms & Conditions, then click **Submit** 
 3. Once submitted, you will receive an email to the address you provided in the registration. Click the **Click to Activate your Account** button[](images/Picture100.png)
