@@ -78,12 +78,12 @@ For this exercise we will go ahead and use the SCP Trial account available to us
 4. Next, you should see your SCP Trial Account Cockpit
 ![](images/Picture101.png)
 
-#####Step 1b - Log On to your Trial Account
+##### Step 1b - Log On to your Trial Account
 1. If you already have a SCP Trial account, you can go to your saved link, or use SAP Cloud Platform portal <https://cloudplatform.sap.com/try.html> and click "**Log On**"
 2. Next, you should see your SCP Trial Account Cockpit
 ![](images/Picture101.png)
 
-#####Step 2 -  Set up your Cloud Foundry Dev Space
+##### Step 2 -  Set up your Cloud Foundry Dev Space
 1. Once you log on to your trial account, go ahead and click to open the Cloud Foundry Trial. Remember that our Enterprise Messaging services were only offered in a few data centers, but the Trial datacenter of **Europe (Frankfurt)** was listed as one of the options, so we will click **OK**. 
 
 ![](images/Picture9.png)
@@ -95,7 +95,7 @@ For this exercise we will go ahead and use the SCP Trial account available to us
 3. Once the request is processed, click **Go to Space**
 ![](images/Picture10.png)
 
-#####Step 3 - Check Entitlements
+##### Step 3 - Check Entitlements
 Once our space is created, we want to go to that subaccount and look at the Entitlements for that space.
 
 1. From the breadcrumb at the top, click on the **global account** link ![](images/Picture13.png) to open the global account context menu on the left.
@@ -111,7 +111,7 @@ Once our space is created, we want to go to that subaccount and look at the Enti
 #### <a name="linkcode3"></a> Configuring the Enterprise Messaging Application
 Next, we will want to subscribe to the appliaction that is part of the Enterprise Messaging service.
 
-#####Step 1 - Subscribe to the Enterprise Messaging application
+##### Step 1 - Subscribe to the Enterprise Messaging application
 
 1. From within our trial subaccount, we will open the **Subscriptions** option from the left hand menu.
 
@@ -126,7 +126,7 @@ Next, we will want to subscribe to the appliaction that is part of the Enterpris
  
 3. After a second or so, you should see it changed to Subscribed.
 
-#####Step 2 - Set up Authorizations to Enterprise Messaging Application
+##### Step 2 - Set up Authorizations to Enterprise Messaging Application
 Next we will set up some authorizations for accessing the new application we are now subscribed to.
 
 1. Go back to the Trial Subaccount from the bread crumb link at the top
@@ -160,7 +160,7 @@ Next we will set up some authorizations for accessing the new application we are
 13. Next we will go ahead and click the **Assign Role Collection** button and choose the **EMManage** role collection we just created in a previous step, and click the **Assign Role Collection** button
  ![](images/Picture29.png)
 
-#####Step 3 - Go to Enterprise Messaging Application 
+##### Step 3 - Go to Enterprise Messaging Application 
 Now that we have our authorizations created and roles assigned, let's go to our Enterprise Messaging application we subscribed to earlier.
 
 1.  From the trial subaccount, go back to the list of **Subscriptions** and click the **Go To Application** link on the Enterprise Message tile.
@@ -177,7 +177,7 @@ For now, you might want to **bookmark this application page** so we can come bac
 
 ### <a name="linkcode4"></a> Create the Service Instance
  
-#####Step 1 - Create A Service Instance 
+##### Step 1 - Create A Service Instance 
 Next we will need to create a service instance for our Enterprise Messaging service.
 
 1. Go back to the trial subaccount and open up your Dev Space (or whatever space you have created and given quota to allow you to create instances), click on the **Services** option in the left hand menu, and then choose the **Service Marketplace** option.
@@ -208,7 +208,7 @@ We will leave both set to true for now.
 9. You need to give the instance a name, so use the same name you specified in the JSON code. We called it **"em"**.
 10. Click **Finish**
 
-#####Step 6 - Create A Service Key for Accessing our Instance
+##### Step 6 - Create A Service Key for Accessing our Instance
 Now that we have created our service instance, the next thing we will want to do is to create a Service Key to allow us to access our instance.
 
 1. Click to open the "em" instance you just created.
@@ -224,7 +224,7 @@ Now that we have created our service instance, the next thing we will want to do
 
 ### <a name="linkcode5"></a> Use the Dashboard to Create Queues and Queue  Subscriptions
 
-#####Step 1 - Open the Dashboard
+##### Step 1 - Open the Dashboard
 1. Let's go back to our Enterprise Messaging service environment again using the link from the breadcrumb menu at the top.
  ![](images/Picture44.png) 
 2. Now we should see that we have an additional icon on the screen for the Dashboard for this service. This link is very important as it gives you access to do quite a lot of configuration and setup.
@@ -238,7 +238,7 @@ Now that we have created our service instance, the next thing we will want to do
 5.Now we can see that Messaging Adminstration cockpit again and we see from the left hand menu that we now have access to Queues and Queue Subscriptions, etc. Currently it is an empty system, so let's create a queue.
  ![](images/Picture47.png) 
  
-#####Step 2 - Create a Queue
+##### Step 2 - Create a Queue
 
 1. Click on **Queues** and click **Create**.
  ![](images/Picture48.png) 
